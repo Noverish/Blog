@@ -22,7 +22,7 @@ category: 기타
 - [Swiper](https://github.com/nolimits4web/swiper) - 스와이핑 라이브러리의 끝판왕 ([데모](https://swiperjs.com/demos/))
 - [SweetAlert2](https://github.com/sweetalert2/sweetalert2) - 팝업 창 라이브러리 ([데모](https://sweetalert2.github.io/#examples))
 - [Gitfolio](https://github.com/imfunniee/gitfolio) - Github 사용자를 위한 개인 홈페이지/블로그 생성기 ([데모](https://imfunniee.github.io/gitfolio/))
-- [DropzoneJS](https://github.com/enyo/dropzone) - 드래그 앤 드롭 라이브러리
+- [DropzoneJS](https://github.com/enyo/dropzone) - 드래그 앤 드롭으로 파일 업로드하는 라이브러리 ([데모](https://www.dropzone.dev/js/))
 - [react-admin](https://github.com/marmelab/react-admin) - 어드민 페이지 생성 도구 ([데모](https://marmelab.com/react-admin-demo))
 - [React-Select](https://github.com/JedWatson/react-select) - Dropdown Select 라이브러리 ([데모](https://react-select.com))
 - [selectize.js](https://github.com/selectize/selectize.js/) - Dropdown Select 라이브러리 ([데모](https://selectize.github.io/selectize.js))
