@@ -129,15 +129,15 @@ $ jps
 
 # 6. 접속 확인
 
-<http://localhost:9870>에 접속하면 Namenode의 정보를 확인할 수 있습니다.
+`http://[하둡을 설치한 서버의 아이피 주소]:9870`에 접속하면 Namenode의 정보를 확인할 수 있습니다.
 
 ![Hadoop Namenode Web UI](hadoop-namenode.png)
 
-<http://localhost:9868>에 접속하면 Secondary Namenode의 정보를 확인할 수 있습니다.
+`http://[하둡을 설치한 서버의 아이피 주소]:9868`에 접속하면 Secondary Namenode의 정보를 확인할 수 있습니다.
 
 ![Hadoop Secondary Namenode Web UI](hadoop-secondary-namenode.png)
 
-<http://localhost:9864>에 접속하면 Datanode의 정보를 확인할 수 있습니다.
+`http://[하둡을 설치한 서버의 아이피 주소]:9864`에 접속하면 Datanode의 정보를 확인할 수 있습니다.
 
 ![Hadoop Datanode Web UI](hadoop-datanode.png)
 
@@ -160,7 +160,18 @@ hdfs 명령어에 대해 자세히 알고 싶다면 <https://blog.voidmainvoid.n
 
 # 8. Docker로 한 번에 하기
 
-지금까지 했던 것을 Docker로 한 번에 띄워버릴 수 있습니다. Dockerfile은 다음과 같습니다.
+지금까지 했던 것을 Docker로 한 번에 띄워버릴 수 있습니다.
+
+```xml core-site.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://0.0.0.0:9000</value>
+    </property>
+</configuration>
+```
 
 ```Dockerfile Dockerfile
 FROM ubuntu:20.04
@@ -188,8 +199,7 @@ RUN ssh-keygen -t rsa -f ~/.ssh/id_rsa -P ''; \
     echo "Host *\n  StrictHostKeyChecking no" > ~/.ssh/config;
 
 # Java 설정
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/ \
-    PATH=$PATH:$JAVA_HOME/bin
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 
 # Hadoop 설정
 ENV HADOOP_HOME=/usr/local/hadoop \
@@ -200,21 +210,14 @@ RUN echo "export JAVA_HOME=$JAVA_HOME" >> /usr/local/hadoop/etc/hadoop/hadoop-en
     echo "export HDFS_DATANODE_USER=root" >> /usr/local/hadoop/etc/hadoop/hadoop-env.sh; \
     echo "export HDFS_SECONDARYNAMENODE_USER=root" >> /usr/local/hadoop/etc/hadoop/hadoop-env.sh;
 
-RUN echo '<?xml version="1.0" encoding="UTF-8"?>' > /usr/local/hadoop/etc/hadoop/core-site.xml; \
-    echo '<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>' >> /usr/local/hadoop/etc/hadoop/core-site.xml; \
-    echo '<configuration>' >> /usr/local/hadoop/etc/hadoop/core-site.xml; \
-    echo '  <property>' >> /usr/local/hadoop/etc/hadoop/core-site.xml; \
-    echo '    <name>fs.defaultFS</name>' >> /usr/local/hadoop/etc/hadoop/core-site.xml; \
-    echo '    <value>hdfs://0.0.0.0:9000</value>' >> /usr/local/hadoop/etc/hadoop/core-site.xml; \
-    echo '  </property>' >> /usr/local/hadoop/etc/hadoop/core-site.xml; \
-    echo '</configuration>' >> /usr/local/hadoop/etc/hadoop/core-site.xml;
+COPY core-site.xml /usr/local/hadoop/etc/hadoop/core-site.xml
 
 ENTRYPOINT ["/bin/sh", "-c" , "service ssh start; hdfs namenode -format; start-dfs.sh; tail -f /dev/null"]
 ```
 
 - 10번째 줄: wget, vim, curl, ifconfig, nslookup 등 유틸 설치
 - 23번째 줄: 이 설정을 하지 않으면 hadoop에서 ssh를 사용할 때 정말로 접속하겠냐는 확인이 떠서 중간에 멈춥니다.
-- 34~36번째 줄: hadoop을 root로 실행하기 위해서는 이런 설정이 필요합니다.
+- 33~35번째 줄: hadoop을 root로 실행하기 위해서는 이런 설정이 필요합니다.
 
 ``` shell shell
 # 도커 이미지 빌드
