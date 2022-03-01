@@ -452,3 +452,14 @@ List<UserEntity> users = repository.findAll(spec, PageRequest.of(0, 10));
 
 resources 폴더 루트에 `import.sql` 이라는 파일이 있으면 Hibernate는 Entity를 통한 Table 자동 생성이 끝난 후 이 파일을 실행합니다.
 보통 실행때마다 데이터를 Drop하는 설정에서 요긴하게 쓰입니다.
+
+# Appendix
+
+### dependency에 JPA를 포함했지만 JPA 설정을 건너뛰고 싶은 경우
+
+```
+spring.autoconfigure.exclude= \
+  org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, \
+  org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, \
+  org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+```
