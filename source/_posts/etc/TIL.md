@@ -12,6 +12,12 @@ category: 기타
 
 <!-- more -->
 
+# 2022-03-10
+
+vim syntax highlighting 켜기
+
+> echo "syntax on" >> ~/.vimrc
+
 # 2021-08-18
 
 query parameter가 있으면 proxy_pass로 보내고 없으면 바로 파일을 서빙
