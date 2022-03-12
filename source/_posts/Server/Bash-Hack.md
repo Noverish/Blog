@@ -5,7 +5,7 @@ date: 2020-04-26 14:33:00 +0900
 cover: /covers/bash.jpg
 disqusId: 6350540701e6e17afa89e62b36436d631a2c0def
 toc: true
-category: 기타
+category: Server
 tags:
 - bash
 ---

@@ -5,7 +5,7 @@ date: 2021-03-01 11:12:00 +0900
 cover: /covers/bash.jpg
 disqusId: 0011860c22129d38a8838a22fd2921333ee038a5
 toc: true
-category: 기타
+category: Server
 tags:
 - zsh
 - terminal
