@@ -61,3 +61,13 @@ category: 기타
 <https://coolors.co/palettes/trending>
 
 ![coolors.co](./coolors.co.png)
+
+# 기타
+
+보안 취약점 검색: https://www.shodan.io/explore
+
+발표 자료 만드는 사이트: https://slides.com/
+
+블로그에 넣을 코드 HTML 생성기: https://colorscripter.com/
+
+인터넷 과거 아카이브: https://archive.org/web/web.php
