@@ -8,19 +8,19 @@
 <hr>
 <h1 id="2-APEX에-AWS-권한-부여하기"><a href="#2-APEX에-AWS-권한-부여하기" class="headerlink" title="2. APEX에 AWS 권한 부여하기"></a>2. APEX에 AWS 권한 부여하기</h1><p>APEX가 Lambda 함수들을 만들고&#x2F;지우고&#x2F;수정하고&#x2F;실행할 수 있도록 권한을 줘야 합니다.</p>
 <p>먼저 APEX가 필요로 하는 권한을 묶은 커스텀 정책을 만듭시다.</p>
-<p><img src="/001.jpg" alt="image001">
+<p><img src="/Server/Lambda-APEX/001.jpg" alt="image001">
 <a target="_blank" rel="noopener" href="https://console.aws.amazon.com/iam/home#/policies">AWS IAM</a>로 들어가서 <code>정책 생성</code>을 누릅니다.</p>
 <hr>
-<p><img src="/002.jpg" alt="image002">
+<p><img src="/Server/Lambda-APEX/002.jpg" alt="image002">
 json편집기에 들어가서 밑의 json을 그대로 입력해 줍시다.
 그리고 <code>Review Policy</code>를 누릅니다.</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;Version&quot;</span>: <span class="string">&quot;2012-10-17&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;Statement&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">&quot;Action&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;iam:CreateRole&quot;</span>,</span><br><span class="line">        <span class="string">&quot;iam:CreatePolicy&quot;</span>,</span><br><span class="line">        <span class="string">&quot;iam:AttachRolePolicy&quot;</span>,</span><br><span class="line">        <span class="string">&quot;iam:PassRole&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:GetFunction&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:ListFunctions&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:CreateFunction&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:DeleteFunction&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:InvokeFunction&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:GetFunctionConfiguration&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:UpdateFunctionConfiguration&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:UpdateFunctionCode&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:CreateAlias&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:UpdateAlias&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:GetAlias&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:ListAliases&quot;</span>,</span><br><span class="line">        <span class="string">&quot;lambda:ListVersionsByFunction&quot;</span>,</span><br><span class="line">        <span class="string">&quot;logs:FilterLogEvents&quot;</span>,</span><br><span class="line">        <span class="string">&quot;cloudwatch:GetMetricStatistics&quot;</span></span><br><span class="line">      ],</span><br><span class="line">      <span class="attr">&quot;Effect&quot;</span>: <span class="string">&quot;Allow&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;Resource&quot;</span>: <span class="string">&quot;*&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<p><img src="/003.jpg" alt="image003">
+<p><img src="/Server/Lambda-APEX/003.jpg" alt="image003">
 정책의 이름을 <code>APEX-Policy</code>로 짓고 정책을 생성합니다.</p>
 <hr>
-<p><img src="/004.jpg" alt="image004">
+<p><img src="/Server/Lambda-APEX/004.jpg" alt="image004">
 그리고 사용자에 이 정책을 추가합니다.
 기존 사용자에 정책을 추가하셔도 되고, 새로운 사용자를 만드셔도 됩니다.
 사용자를 만들거나 정책을 추가하는 방법은 설명하지 않도록 하겠습니다.</p>
@@ -46,11 +46,11 @@ json편집기에 들어가서 밑의 json을 그대로 입력해 줍시다.
 <img src="005.jpg" width="500">
 
 <p>프로젝트의 이름은 <code>APEX-Test</code><br>프로젝트의 설명은 그냥 <code>.</code>으로 했습니다.</p>
-<p><img src="/006.jpg" alt="image006">
+<p><img src="/Server/Lambda-APEX/006.jpg" alt="image006">
 이제 프로젝트 폴더를 보면 json파일과 hello라는 함수가 만들어져 있습니다.</p>
 <hr>
 <h1 id="4-프로젝트-구조-살펴보기"><a href="#4-프로젝트-구조-살펴보기" class="headerlink" title="4. 프로젝트 구조 살펴보기"></a>4. 프로젝트 구조 살펴보기</h1><h2 id="project-json"><a href="#project-json" class="headerlink" title="project.json"></a>project.json</h2><p>먼저 <code>project.json</code> 파일을 살펴보겠습니다.</p>
-<p><img src="/008.jpg" alt="image008"></p>
+<p><img src="/Server/Lambda-APEX/008.jpg" alt="image008"></p>
 <p><code>role</code>은 배포할 함수의 role을 지정해 줍니다. 이 role은 APEX가 자동으로 생성한 것입니다.<br><code>memory</code>는 배포할 함수의 메모리 제한(MB)를 나타냅니다.<br><code>timeout</code>은 배포할 함수의 시간 제한(s)을 나타냅니다.<br><code>environment</code>는 배포할 함수에서 사용할 환경 변수를 나타냅니다.<br>위의 값들을 자유롭게 본인의 프로젝트에 맞게 변경하시면 됩니다.<br>이 밖에도 다양한 field들이 있습니다.</p>
 <p>APEX에서는</p>
 <ol>
@@ -60,7 +60,7 @@ json편집기에 들어가서 밑의 json을 그대로 입력해 줍시다.
 <p>등 을 제공하고 있습니다.</p>
 <p>자세한 정보는 <a target="_blank" rel="noopener" href="http://apex.run/#structuring-projects">프로젝트 구조 (영문)</a>를 참고해 주세요</p>
 <hr>
-<h2 id="폴더-구조"><a href="#폴더-구조" class="headerlink" title="폴더 구조"></a>폴더 구조</h2><p><img src="/006.jpg" alt="image006"></p>
+<h2 id="폴더-구조"><a href="#폴더-구조" class="headerlink" title="폴더 구조"></a>폴더 구조</h2><p><img src="/Server/Lambda-APEX/006.jpg" alt="image006"></p>
 <p>모든 함수는 <code>functions</code> 폴더안에 존재해야합니다.<br><code>functions</code> 폴더 밖에 만들어 둔 파일이나 폴더들은 APEX 에서는 무시합니다.</p>
 <p><code>functions</code> 폴더의 바로 sub폴더들의 이름이 람다 함수의 이름이 됩니다.<br>특별한 설정을 하지 않는 이상 sub 폴더 안의 <code>index.js</code>가 람다 함수의 실행 파일이 됩니다.<br>각각의 sub 폴더 안에서는 밖에 있는 파일에 접근 할 수 없습니다.<br>함수를 배포 할 때에는 sub 폴더 안의 파일들만을 묶어서 배포하기 때문입니다.    </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">project.json</span><br><span class="line"></span><br><span class="line">package.json</span><br><span class="line">node_modules</span><br><span class="line">└── ...</span><br><span class="line"></span><br><span class="line">fun0</span><br><span class="line">└── index.js</span><br><span class="line"></span><br><span class="line">functions</span><br><span class="line">├── global.js</span><br><span class="line">├── fun1</span><br><span class="line">│    ├── index.js</span><br><span class="line">│    ├── package.json</span><br><span class="line">│    └── node_modules</span><br><span class="line">│         └── ...</span><br><span class="line">└── fun2</span><br><span class="line">     ├── asdf.js</span><br><span class="line">     └── index.js</span><br></pre></td></tr></table></figure>
@@ -79,7 +79,7 @@ json편집기에 들어가서 밑의 json을 그대로 입력해 줍시다.
 <p>이를 해결 하기 위한 방법중에 하나는 <code>WebPack</code>을 사용하는 것인데 다음 시간에 알려드리도록 하겠습니다.</p>
 <hr>
 <h1 id="5-함수-생성하기"><a href="#5-함수-생성하기" class="headerlink" title="5. 함수 생성하기"></a>5. 함수 생성하기</h1><p>그냥 단순하게 functions에 폴더 하나 만들어 주고 그 안에 index.js 파일을 만들어 주시면 됩니다.</p>
-<p><img src="/009.jpg" alt="image009"></p>
+<p><img src="/Server/Lambda-APEX/009.jpg" alt="image009"></p>
 <p>예시로 <code>test</code> 폴더를 만들고 그 안에 <code>index.js</code> 파일을 만들어서 test라는 함수를 만들었습니다.
 <code>index.js</code>에는 아래의 코드를 넣었습니다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;test1234&#x27;</span>)</span><br><span class="line"><span class="built_in">exports</span>.handle = <span class="function"><span class="keyword">function</span>(<span class="params">e, ctx, cb</span>) </span>&#123;</span><br><span class="line">  cb(<span class="literal">null</span>, &#123; <span class="attr">test</span>: <span class="string">&#x27;test&#x27;</span> &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -88,11 +88,11 @@ json편집기에 들어가서 밑의 json을 그대로 입력해 줍시다.
 <hr>
 <h1 id="6-함수-배포하고-실행하기"><a href="#6-함수-배포하고-실행하기" class="headerlink" title="6. 함수 배포하고 실행하기"></a>6. 함수 배포하고 실행하기</h1><p><code>apex deploy</code>는 functions 폴더에 있는 함수들을 모두 배포하는 작업을 합니다.<br><code>apex deploy &#123;name&#125;</code>처럼 특정 한 함수만 배포 할 수도 있고,<br><code>apex deploy prefix*</code>, <code>apex deploy *suffix</code>처럼 <code>*</code>을 사용하여 특정 접두어나 접미어를 가진 함수들만 배포 할 수도 있습니다.    </p>
 <p><code>apex invoke &#123;name&#125;</code>은 {name}이란 이름을 가진 함수를 실행하는 작업을 합니다.    </p>
-<p><img src="/010.jpg" alt="image010">
+<p><img src="/Server/Lambda-APEX/010.jpg" alt="image010">
 아까 만들었던 test 함수를 배포하고 실행한 결과입니다.<br><a target="_blank" rel="noopener" href="https://ap-northeast-2.console.aws.amazon.com/lambda/home?region=ap-northeast-2#/functions">AWS Lambda Console</a>
 에 들어가보시면 <code>APEX-Test_test</code>라는 함수가 만들어 진 것을 볼 수 있습니다.</p>
 <hr>
-<p><img src="/011.jpg" alt="image011">
+<p><img src="/Server/Lambda-APEX/011.jpg" alt="image011">
 <code>apex logs &#123;name&#125;</code>를 통해 함수의 로그를 확인 할 수 있습니다.<br>우리가 만들었던 <code>test</code>함수에서 콘솔에 출력했던 <code>test1234</code>를 확인 할 수 있습니다.<br>이 명령어를 통해서 <code>apex invoke</code>를 통해 실행된 것의 로그만 확인 할 수 있는 것이 아니라
 모든 로그를 확인할 수 있습니다.</p>
 <p>log 명령어는 최근 5분 안에 발생했던 로그만 보여줍니다.

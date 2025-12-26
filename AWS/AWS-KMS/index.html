@@ -10,20 +10,20 @@
 
 <h1 id="2-키-생성"><a href="#2-키-생성" class="headerlink" title="2. 키 생성"></a>2. 키 생성</h1><p><a target="_blank" rel="noopener" href="https://ap-northeast-2.console.aws.amazon.com/kms/home?region=ap-northeast-2#/kms/keys">AWS KMS - Customer managed keys</a>에 들어가서 <code>Create key</code> 버튼을 클릭합니다.</p>
 <hr>
-<p><img src="/key-create-step-1.png" alt="AWS KMS 키 생성 1단계 - 키 타입 선택"></p>
+<p><img src="/AWS/AWS-KMS/key-create-step-1.png" alt="AWS KMS 키 생성 1단계 - 키 타입 선택"></p>
 <p>대칭키를 생성할건지 비대칭키를 생성할건지 선택하는 단계입니다. 일단 대칭키로 선택하고 다음으로 넘어갑니다.</p>
 <hr>
-<p><img src="/key-create-step-2.png" alt="AWS KMS 키 생성 2단계 - 메타데이터 입력"></p>
+<p><img src="/AWS/AWS-KMS/key-create-step-2.png" alt="AWS KMS 키 생성 2단계 - 메타데이터 입력"></p>
 <p>별명, 설명, 태그를 입력하는 단계입니다. 적당한 별명을 하나 적고 다음으로 넘어갑니다.</p>
 <hr>
-<p><img src="/key-create-step-3.png" alt="AWS KMS 키 생성 3단계 - 키 관리 유저 선택"></p>
+<p><img src="/AWS/AWS-KMS/key-create-step-3.png" alt="AWS KMS 키 생성 3단계 - 키 관리 유저 선택"></p>
 <p>키를 관리할 유저를 고르는 단계입니다. 아까 생성한 유저를 선택하고 다음으로 넘어갑니다.</p>
 <hr>
-<p><img src="/key-create-step-4.png" alt="AWS KMS 키 생성 4단계 - 키 사용 유저 선택"></p>
+<p><img src="/AWS/AWS-KMS/key-create-step-4.png" alt="AWS KMS 키 생성 4단계 - 키 사용 유저 선택"></p>
 <p>키를 사용할 유저를 고르는 단계입니다. 아까 생성한 유저를 선택하고 다음으로 넘어갑니다.</p>
 <hr>
 <p>마지막으로 입력한 내용을 리뷰하는 단계를 거치면 키 생성이 완료됩니다.</p>
-<p><img src="/generated-key.png" alt="키 생성이 완료된 모습"></p>
+<p><img src="/AWS/AWS-KMS/generated-key.png" alt="키 생성이 완료된 모습"></p>
 <h1 id="3-암호화-복호화"><a href="#3-암호화-복호화" class="headerlink" title="3. 암호화, 복호화"></a>3. 암호화, 복호화</h1><p>본인이 개발하고 있는 Spring 프로젝트에 AWS KMS SDK를 추가합니다.</p>
 <figure class="highlight gradle"><figcaption><span>build.gradle</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation <span class="string">&#x27;com.amazonaws:aws-java-sdk-kms:1.12.233&#x27;</span></span><br></pre></td></tr></table></figure>
 
@@ -39,7 +39,7 @@
 <figure class="highlight java"><figcaption><span>DatabaseConfiguration.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableConfigurationProperties(KmsProperties.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DatabaseConfiguration</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> DataSource <span class="title">dataSource</span><span class="params">(KmsProperties properties)</span> </span>&#123;</span><br><span class="line">        String profile = properties.getProfile();</span><br><span class="line">        String keyId = properties.getKeyId();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> DataSourceBuilder.create()</span><br><span class="line">            .url(KmsUtils.decrypt(profile, keyId, properties.getUrl()))</span><br><span class="line">            .username(KmsUtils.decrypt(profile, keyId, properties.getUsername()))</span><br><span class="line">            .password(KmsUtils.decrypt(profile, keyId, properties.getPassword()))</span><br><span class="line">            .build();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1 id="5-특정-IP만-암-x2F-복호화-허용하기"><a href="#5-특정-IP만-암-x2F-복호화-허용하기" class="headerlink" title="5. 특정 IP만 암&#x2F;복호화 허용하기"></a>5. 특정 IP만 암&#x2F;복호화 허용하기</h1><p>키를 사용할 때 등록되어 있는 IP에서 온 암&#x2F;복호화 요청만 허용하게 설정해줄 수 있습니다.</p>
-<p><img src="/key-detail.png" alt="KMS 키의 자세한 정보 화면"></p>
+<p><img src="/AWS/AWS-KMS/key-detail.png" alt="KMS 키의 자세한 정보 화면"></p>
 <p>AWS KMS 콘솔에서 아까 생성한 키를 클릭하여 자세한 정보 화면으로 들어갑니다.</p>
 <p>여기서 <code>Switch to policy view</code> 버튼을 클릭합니다.</p>
 <hr>

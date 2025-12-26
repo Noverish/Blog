@@ -3,7 +3,7 @@
 (feat. locale 설정)</p>
 <span id="more"></span>
 
-<p><img src="/./broken-korean.png" alt="깨져있는 한글 예시"></p>
+<p><img src="/Server/Locale-Korean/broken-korean.png" alt="깨져있는 한글 예시"></p>
 <h1 id="1-현재-설정되어-있는-locale-보기"><a href="#1-현재-설정되어-있는-locale-보기" class="headerlink" title="1. 현재 설정되어 있는 locale 보기"></a>1. 현재 설정되어 있는 locale 보기</h1><p><code>locale</code> 명령어를 입력하여 현재 설정되어 있는 locale 볼 수 있습니다.</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> locale</span></span><br><span class="line">LANG=en_US.UTF-8</span><br><span class="line">LANGUAGE=</span><br><span class="line">LC_CTYPE=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_NUMERIC=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_TIME=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_COLLATE=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_MONETARY=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_MESSAGES=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_PAPER=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_NAME=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_ADDRESS=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_TELEPHONE=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_MEASUREMENT=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_IDENTIFICATION=&quot;en_US.UTF-8&quot;</span><br><span class="line">LC_ALL=</span><br></pre></td></tr></table></figure>
 
@@ -27,7 +27,7 @@
 <p>$ sudo update-locale LC_CTYPE&#x3D;ko_KR.UTF-8</p>
 </blockquote>
 <p>그 다음에 ssh 연걸을 끊었다가 다시 연결하면 다음과 같이 한글이 잘 나타나는 것을 알 수 있습니다.</p>
-<p><img src="/./fixed-korean.png" alt="잘 표시되는 한글 예시"></p>
+<p><img src="/Server/Locale-Korean/fixed-korean.png" alt="잘 표시되는 한글 예시"></p>
 <p><a target="_blank" rel="noopener" href="https://www.thomas-krenn.com/en/wiki/Configure_Locales_in_Ubuntu">Reference</a></p>
 <h1 id="부록-다양한-LC-locale-환경-변수들"><a href="#부록-다양한-LC-locale-환경-변수들" class="headerlink" title="부록. 다양한 LC_* locale 환경 변수들"></a>부록. 다양한 LC_* locale 환경 변수들</h1><p>우리는 위에서 <code>LC_CTYPE</code> locale 환경 변수만 변경했습니다.
 다른 값들도 변경하면 다양한 방면으로 시스템에 영향을 미칩니다.</p>
