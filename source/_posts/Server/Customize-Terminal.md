@@ -17,12 +17,12 @@ tags:
 
 <!-- more -->
 
-![맥 기본 터미널](./zsh.png)
+![맥 기본 터미널](zsh.png)
 
 맥 기본 Terminal의 모습입니다. 검정 바탕에 흰 글자... 정말 재미도 없고 감동도 없는 그런 모습입니다.
 이제 이 글을 따라하며 한 단계씩 설정해 나가면 다음과 같은 터미널을 만들 수 있습니다.
 
-![이 글을 따라한 후 당신의 터미널](./powerlevel10k.png)
+![이 글을 따라한 후 당신의 터미널](powerlevel10k.png)
 
 # 1. zsh 설치
 
@@ -44,7 +44,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/t
 
 위의 명령어를 통해 Oh My ZSH를 설치하면 아래와 같이 터미널이 조금 달라져 있는 것을 볼 수 있습니다.
 
-![Oh MY ZSH 설치후 터미널](./ohmyzsh.png)
+![Oh MY ZSH 설치후 터미널](ohmyzsh.png)
 
 # 3. Oh My ZSH 테마 변경
 
@@ -60,7 +60,7 @@ Oh My ZSH는 설정 파일에서 단순히 글자만 바꿈으로써 테마를 �
 `~/.zshrc` 파일을 위와 같이 변경한 후 새 터미널을 열면 아래 사진과 같이 바뀐 테마가 적용 되어 있습니다.
 명령어 입력란을 보면 좀 달라져 있는 것을 알 수 있습니다.
 
-![폰트 문제 때문에 agnoster 테마가 잘 적용되지 않은 터미널](./agnoster-bad.png)
+![폰트 문제 때문에 agnoster 테마가 잘 적용되지 않은 터미널](agnoster-bad.png)
 
 하지만 폰트 문제 때문에 위와 같이 뭔가 이상하게 나오는 것을 알 수 있습니다.
 
@@ -73,9 +73,9 @@ https://github.com/powerline/fonts
 
 그런 다음 터미널에서 아래와 같이 폰트를 바꾼 후 새 터미널을 열면 제대로 나오는 것을 볼 수 있습니다.
 
-![터미널에서 폰트를 바꾸는 방법](./terminal-font.jpg)
+![터미널에서 폰트를 바꾸는 방법](terminal-font.jpg)
 
-![agnoster 테마가 적용된 터미널](./agnoster-good.png)
+![agnoster 테마가 적용된 터미널](agnoster-good.png)
 
 # 5. 색상 프로필 변경
 
@@ -87,9 +87,9 @@ https://github.com/powerline/fonts
 
 그런 다음 터미널에서 아래와 같이 프로필을 Import한 후 새 터미널을 열면 그럴듯한 색이 나오는 것을 볼 수 있습니다.
 
-![터미널에서 색상 프로필을 Import 하는 방법](./terminal-scheme.jpg)
+![터미널에서 색상 프로필을 Import 하는 방법](terminal-scheme.jpg)
 
-![Solarized Dark가 젹용된 터미널](./solarized.png)
+![Solarized Dark가 젹용된 터미널](solarized.png)
 
 # 6. powerlevel10k 테마
 
@@ -112,11 +112,11 @@ $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:
 + ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
-![powerlevel10k 설정 화면](./interactive.png)
+![powerlevel10k 설정 화면](interactive.png)
 
 5) 설정을 다 마치고 나면 다음과 같이 멋있고 풍성한 터미널을 볼 수 있습니다.
 
-![powerlevel10k 테마가 적용된 터미널](./powerlevel10k.png)
+![powerlevel10k 테마가 적용된 터미널](powerlevel10k.png)
 
 위의 사진처럼 `powerlevel10k` 테마에서는 명령어를 입력한 시간, 명령어가 걸린 시간, 명령어의 exit 값을 알 수 있습니다.
 
@@ -124,12 +124,12 @@ $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:
 
 신나는 마음으로 VSCode에 들어가서 Terminal 창을 열면 아래와 같이 폰트가 다 깨져 있습니다.
 
-![폰트가 다 깨져있는 VSCode 터미널](./vscode1.png)
+![폰트가 다 깨져있는 VSCode 터미널](vscode1.png)
 
 VSCode 설정에 들어가서 아래와 같이 입력하여 Terminal의 폰트를 바꿉니다.
 
-![VSCode에서 터미널 폰트를 바꾸는 방법](./vscode2.png)
+![VSCode에서 터미널 폰트를 바꾸는 방법](vscode2.png)
 
 그 후 새 터미널을 열어보면 다음과 같이 제대로 나오는 것을 알 수 있습니다.
 
-![powerlevel10k 테마가 적용된 VSCode 터미널](./vscode3.png)
+![powerlevel10k 테마가 적용된 VSCode 터미널](vscode3.png)
