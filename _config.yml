@@ -111,3 +111,5 @@ deploy:
 marked:
   gfm: true
   breaks: false
+  prependRoot: true
+  postAsset: true
