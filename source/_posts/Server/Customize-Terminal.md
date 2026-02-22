@@ -10,6 +10,7 @@ tags:
 - zsh
 - terminal
 - ohmyzsh
+- ghostty
 ---
 
 검정 바탕에 흰 글자가 전부인 기본 Terminal은 눈을 침침하게 하고 코딩 의욕을 저하시키는 원인 중에 하나입니다.
@@ -120,16 +121,66 @@ $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:
 
 위의 사진처럼 `powerlevel10k` 테마에서는 명령어를 입력한 시간, 명령어가 걸린 시간, 명령어의 exit 값을 알 수 있습니다.
 
-# 7. VSCode에 테마 적용하기
+# 7. Ghostty 터미널
 
-신나는 마음으로 VSCode에 들어가서 Terminal 창을 열면 아래와 같이 폰트가 다 깨져 있습니다.
+[Ghostty](https://ghostty.org)는 2024년 말 공개된 터미널 에뮬레이터로, GPU 가속 렌더링과 네이티브 UI를 결합하여 빠른 속도와 높은 완성도를 자랑합니다.
+macOS와 Linux를 모두 지원하며, 설정 파일 하나로 간결하게 관리할 수 있습니다.
 
-![폰트가 다 깨져있는 VSCode 터미널](vscode1.png)
+설정 파일 위치는 `~/.config/ghostty/config`입니다.
 
-VSCode 설정에 들어가서 아래와 같이 입력하여 Terminal의 폰트를 바꿉니다.
+## 테마 및 폰트
 
-![VSCode에서 터미널 폰트를 바꾸는 방법](vscode2.png)
+```ini
+theme = Solarized Dark Higher Contrast
+font-family = "SourceCodePro+Powerline+Awesome Regular"
+font-family = "Apple SD Gothic Neo"
+font-style-bold = false
+font-style-bold-italic = false
+```
 
-그 후 새 터미널을 열어보면 다음과 같이 제대로 나오는 것을 알 수 있습니다.
+- `theme`: 기본 제공 테마 이름을 입력합니다. `Solarized Dark Higher Contrast`는 Solarized Dark보다 대비가 높아 가독성이 좋습니다.
+- `font-family`: 우선순위 순서로 여러 개 지정할 수 있습니다. 첫 번째 폰트에 없는 글자(한글 등)는 두 번째 폰트로 자동 대체됩니다.
+- `font-style-bold` / `font-style-bold-italic`: `false`로 설정하면 볼드·이탤릭 서체를 별도로 렌더링하지 않고 일반 서체로 통일합니다.
 
-![powerlevel10k 테마가 적용된 VSCode 터미널](vscode3.png)
+  이 옵션을 설정하지 않으면 `ls` 명령어 결과가 이상하게 출력됩니다.
+  `ls`는 기본적으로 디렉토리 이름을 볼드체로 출력하는데, `SourceCodePro+Powerline+Awesome Regular`는 **Regular 웨이트만 존재하는 패치 폰트**입니다.
+  볼드 렌더링이 요청되면 Ghostty가 해당 폰트의 Bold 변형을 찾지 못해, Powerline·Awesome 글리프가 포함되지 않은 **시스템의 다른 Source Code Pro Bold 폰트**로 대체됩니다.
+  그 결과 프롬프트의 특수 기호들이 깨지거나, 폰트 메트릭 차이로 인해 글자 간격이 틀어져 보입니다.
+  `font-style-bold = false`를 설정하면 볼드 요청이 와도 항상 Regular 폰트를 사용하므로 이 문제가 사라집니다.
+
+## 커서
+
+```ini
+cursor-style = block
+cursor-color = #708284
+shell-integration-features = no-cursor
+```
+
+- `cursor-style`: 커서 모양을 지정합니다. `block`, `bar`, `underline`, `block_hollow` 중 선택할 수 있습니다. 기본값은 `block`입니다. `Solarized Dark Higher Contrast` 테마는 `cursor-style`을 별도로 정의하지 않으므로 Ghostty 기본값인 `block`이 그대로 적용됩니다.
+- `cursor-color`: 커서 색상을 hex 코드로 지정합니다. `Solarized Dark Higher Contrast` 테마의 기본 커서 색상은 `#f34b00`(주황빛 빨강)인데, 눈에 너무 튀어서 회색 계열인 `#708284`로 변경했습니다.
+- `shell-integration-features = no-cursor`: Ghostty의 쉘 통합 기능 중 커서 제어만 비활성화합니다. zsh/powerlevel10k가 커서를 직접 관리하도록 맡깁니다.
+
+  이 옵션을 설정하지 않으면 `cursor-style`과 `cursor-color` 설정이 적용되지 않습니다.
+  Ghostty는 쉘 통합(shell integration) 기능을 활성화하면 zsh에 훅(hook)을 자동으로 주입하여, 명령어 실행 중·대기 중 등 **쉘의 상태에 따라 동적으로 커서를 변경하는 ANSI 이스케이프 시퀀스**를 프롬프트에 삽입합니다.
+  이 동적 시퀀스가 config 파일의 정적 커서 설정을 덮어쓰기 때문에, 아무리 `cursor-style`과 `cursor-color`를 지정해도 반영되지 않는 것입니다.
+  `no-cursor`를 설정하면 Ghostty가 커서 관련 이스케이프 시퀀스 주입을 생략하므로, config 파일에 지정한 커서 스타일과 색상이 그대로 유지됩니다.
+
+## 배경 투명도
+
+```ini
+background-opacity = 0.85
+background-blur-radius = 20
+```
+
+- `background-opacity`: 배경 투명도를 0~1 사이로 설정합니다. `0.85`는 살짝 투명하게 보이는 정도입니다.
+- `background-blur-radius`: 투명 배경 뒤의 내용을 흐리게 처리하는 블러 반경입니다. macOS의 유리(glass) 효과와 함께 사용하면 깔끔합니다.
+
+## 키 바인딩
+
+```ini
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+```
+
+- `global:` 접두사를 붙이면 다른 앱이 포커스를 갖고 있어도 동작하는 전역 단축키로 등록됩니다.
+- `cmd+grave_accent`는 `` Cmd+` ``에 해당합니다.
+- `toggle_quick_terminal`은 화면 상단에서 슬라이드로 내려오는 Quick Terminal을 토글합니다. 어느 앱에서든 빠르게 터미널을 열 수 있어 매우 편리합니다.
