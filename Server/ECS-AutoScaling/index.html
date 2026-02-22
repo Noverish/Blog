@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>EC2 Container Service(ECS) 사용하기 + AutoScaling - Hyunsub&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hyunsub Kim"><meta name="msapplication-TileImage" content="/assets/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hyunsub Kim"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta description="EC2 Container Service(ECS) 사용하기 + AutoScaling"><meta property="og:type" content="blog"><meta property="og:title" content="EC2 Container Service(ECS) 사용하기 + AutoScaling"><meta property="og:url" content="https://blog.hyunsub.kim/Server/ECS-AutoScaling/"><meta property="og:site_name" content="Hyunsub&#039;s Blog"><meta property="og:description" content="EC2 Container Service(ECS) 사용하기 + AutoScaling"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://blog.hyunsub.kim/covers/aws-ecs.jpg"><meta property="article:published_time" content="2018-01-29T22:31:30.000Z"><meta property="article:author" content="Hyunsub Kim"><meta property="article:tag" content="aws"><meta property="article:tag" content="docker"><meta property="article:tag" content="ecs"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/covers/aws-ecs.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.hyunsub.kim/Server/ECS-AutoScaling/"},"headline":"Hyunsub's Blog","image":["https://blog.hyunsub.kim/covers/aws-ecs.jpg"],"datePublished":"2018-01-29T22:31:30.000Z","author":{"@type":"Person","name":"Hyunsub Kim"},"description":"EC2 Container Service(ECS) 사용하기 + AutoScaling"}</script><link rel="canonical" href="https://blog.hyunsub.kim/Server/ECS-AutoScaling/"><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Noverish/Blog"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="카탈로그" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/covers/aws-ecs.jpg" alt="EC2 Container Service(ECS) 사용하기 + AutoScaling"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2018-01-29T22:31:30.000Z" title="2018-01-29T22:31:30.000Z">2018-01-30</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/Server/">Server</a></span><span class="level-item">11분안에 읽기 (약 1596 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile">EC2 Container Service(ECS) 사용하기 + AutoScaling</h1><div class="content"><p>EC2 Container Service(ECS) 사용하기 + AutoScaling</p>
+<span id="more"></span>
+
+<h2 id="기본적인-Docker-사용법은-안다고-가정하겠습니다-설치-명령어-등"><a href="#기본적인-Docker-사용법은-안다고-가정하겠습니다-설치-명령어-등" class="headerlink" title="기본적인 Docker 사용법은 안다고 가정하겠습니다. (설치, 명령어 등)"></a>기본적인 Docker 사용법은 안다고 가정하겠습니다. (설치, 명령어 등)</h2><p><img src="/Server/ECS-AutoScaling/000.jpg" alt="image000"></p>
+<p>현재 저는 접속하면 hello world를 띄워주는 서비스를 제공 하고 있습니다.
+이 서비스는 AWS EC2와 nodejs를 사용하고 있습니다.
+ECS라는 서비스를 사용 하려고 합니다.</p>
+<h1 id="1-도커-이미지-만들기"><a href="#1-도커-이미지-만들기" class="headerlink" title="1. 도커 이미지 만들기"></a>1. 도커 이미지 만들기</h1><h3 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">FROM ubuntu:16.04</span><br><span class="line">MAINTAINER Noverish Harold &lt;embrapers263@gmail.com&gt;</span><br><span class="line"></span><br><span class="line">WORKDIR &#x2F;root</span><br><span class="line"></span><br><span class="line">RUN apt-get update</span><br><span class="line">RUN apt-get install -y nodejs</span><br><span class="line">RUN apt-get install -y git</span><br><span class="line">RUN git clone https:&#x2F;&#x2F;github.com&#x2F;Noverish&#x2F;simple-nodejs</span><br><span class="line"></span><br><span class="line">CMD cd &#x2F;root&#x2F;simple-nodejs; git pull origin master; nodejs index.js</span><br><span class="line"></span><br><span class="line">EXPOSE 80</span><br><span class="line">EXPOSE 443</span><br></pre></td></tr></table></figure>
+<p>위 처럼 자신이 만들고 싶은 도커 이미지의 Dockerfile을 만듭니다.
+Dockerfile은 만들 줄 아신다고 생각하겠습니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker build --tag main-image .</span></span><br></pre></td></tr></table></figure>
+<p>Dockerfile이 있는 위치에서 위의 명령어를 통해 이름이 <code>main-image</code>인 도커 이미지를 만들었습니다.</p>
+<h1 id="2-ECS-설정하기"><a href="#2-ECS-설정하기" class="headerlink" title="2. ECS 설정하기"></a>2. ECS 설정하기</h1><p><img src="/Server/ECS-AutoScaling/001.jpg" alt="image001">
+<a target="_blank" rel="noopener" href="https://ap-northeast-2.console.aws.amazon.com/ecs">AWS ECS</a>에 들어가서 <code>시작하기</code>를 누릅니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/002.jpg" alt="image002">
+우리는 둘 다 할 것이므로 둘다 체크하고 넘어갑니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/003.jpg" alt="image003">
+리포지토리 이름은 그냥 <code>test</code>라고 했습니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/004.jpg" alt="image004">
+위의 명령어를 통해 리포지토리에 로그인 하고 이미지를 푸쉬하라는데 밑에 자세히 설명하도록 하겠습니다.</p>
+<hr>
+<p>일단 AWS CLI를 설치해야 합니다.</p>
+<p>맥 기준으로</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install awscli</span></span><br></pre></td></tr></table></figure>
+<p>명령어를 통해 AWS CLI를 설치합니다.
+다른 OS는 알아서…</p>
+<p><img src="/Server/ECS-AutoScaling/005.jpg" alt="image005">
+그다음에 설정을 해줘야 하는데 <code>aws configure</code> 명령어를 통해
+IAM User의 Access ID와 Secret Key를 위 처럼 입력해주시면 됩니다.</p>
+<hr>
+<p>이제 AWS CLI 설정은 끝났습니다.
+아까 페이지의 명령어를 차례대로 따라하시면 됩니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> aws ecr get-login --no-include-email --region ap-northeast-2</span></span><br></pre></td></tr></table></figure>
+<p>이 명령어를 통해 로그인을 하면</p>
+<p><img src="/Server/ECS-AutoScaling/006.jpg" alt="image006">
+위와 같이 엄청 긴 명령어가 나옵니다.</p>
+<p><img src="/Server/ECS-AutoScaling/007.jpg" alt="image007">
+만약 위와 같이 에러 메세지가 나온다면 <code>aws configure</code>를 통해 설정 해준 유저에 권한이 없어서 생기는 문제입니다.</p>
+<p><img src="/Server/ECS-AutoScaling/008.jpg" alt="image008">
+AWS IAM에서 위의 권한을 유저에 할당하시면 됩니다.</p>
+<p><img src="/Server/ECS-AutoScaling/009.jpg" alt="image009">
+아까의 명령어에서 반환된 결과를 복붙해서 실행합니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker tag main-image:latest 123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/<span class="built_in">test</span>:latest</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> docker push 123456789123.dkr.ecr.ap-northeast-2.amazonaws.com/<span class="built_in">test</span>:latest</span></span><br></pre></td></tr></table></figure>
+<p>위의 명령어는 예시 입니다. 본인의 명령어는 <code>단계 2: Docker 이미지 빌드, 태그 지정 푸쉬</code> 페이지에서 확인하시기 바랍니다.
+우리가 만들어 놓은 도커 이미지 이름은 <code>main-image</code>이고 리포지토리 이름은 <code>test</code>입니다.
+이에 주의하면서 위의 명령어를 입력하면 아래와 같이 업로드가 진행됩니다.</p>
+<p><img src="/Server/ECS-AutoScaling/010.jpg" alt="image010">
+위의 명령어를 입력하면 위와 같이 우리가 만들어 놓은 이미지가 리포지토리에 푸쉬됩니다.
+그 다음에 페이지의 다음 단계로 넘어갑니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/011.jpg" alt="image011">
+작업 정의 이름을 <code>test-task-definition</code>으로
+컨테이너 이름을 <code>test-container</code>으로 해줬습니다.
+여기서 주의 해야 할 점은 위와 같이 호스트 포트를 꼭 0으로 해주어야 합니다!
+0으로 해주지 않으면 뒤에서 할 AutoScaling을 할 때
+Load Balancer의 포트 번호가 이미 사용 중이라고 해서 에러가 납니다.
+여기서 0의 의미는 자동으로 할당한다는 의미 입니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/012.jpg" alt="image012">
+<img src="/Server/ECS-AutoScaling/013.jpg" alt="image013">
+서비스 이름을 <code>test-service</code>라고 지었습니다.
+우리가 아까 호스트 포트를 0으로 설정해 놔서
+강제로 Load Balancer를 사용 하는 것으로 되어 있습니다.
+그리고 넘어갑니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/014.jpg" alt="image014">
+자신이 원하는 설정 하시고 넘어갑니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/015.jpg" alt="image015">
+<img src="/Server/ECS-AutoScaling/016.jpg" alt="image016">
+<code>인스턴스 시작 및 서비스 실행</code>을 누릅니다</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/017.jpg" alt="image017">
+그러면 ELB, VPC, EC2등 다양한 것들을 설정합니다.
+이 작업은 몇 분 정도 걸립니다.
+작업이 끝나면 서비스 보기를 누릅니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/019.jpg" alt="image019">
+위와 같이 나오면 성공입니다.</p>
+<hr>
+<h1 id="2-AutoScaling-설정하기"><a href="#2-AutoScaling-설정하기" class="headerlink" title="2. AutoScaling 설정하기"></a>2. AutoScaling 설정하기</h1><p><img src="/Server/ECS-AutoScaling/020.jpg" alt="image020">
+<code>Auto Scaling</code>을 누릅니다.
+아직 아무 것도 없다고 뜹니다.
+업데이트를 누릅니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/021.jpg" alt="image021">
+그냥 넘어갑니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/022.jpg" alt="image022">
+여기도 그냥 넘어갑니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/023.jpg" alt="image023">
+저는 최소 작업 개수를 1개로 최대 작업 개수를 5개로 했습니다.
+다르게 해도 상관 없습니다.
+<code>조정 정책 추가</code>를 누릅니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/024.jpg" alt="image024">
+정책 이름을 <code>test-policy</code>로 했습니다.
+<code>새 경보 생성</code>을 누릅니다.
+알람 이름을 <code>test-alarm</code>으로 했습니다.
+위와 같이 한 다음에 <code>저장</code>을 누릅니다.</p>
+<p>위에서 설정한 값의 의미는
+1개의 컨테이너가 1분 이상 평균 CPU 사용량이 1퍼센트가 넘으면 경보가 울린다는 의미입니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/025.jpg" alt="image025">
+조정 작업에서 1 추가로 합니다.<br>이 의미는 경보가 울리면 작업을 1개 추가 한다는 의미 입니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/026.jpg" alt="image026">
+그리고 다음 단계로 넘어갑니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/027.jpg" alt="image027">
+<img src="/Server/ECS-AutoScaling/028.jpg" alt="image028">
+서비스 업데이트를 누릅니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/029.jpg" alt="image029">
+위와 같이 설정 작업이 끝날 때 까지 기다립니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/030.jpg" alt="image030">
+EC2 대쉬보드로 들어가서 로드밸런서의 DNS 주소를 찾습니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/031.jpg" alt="image031">
+정상적으로 페이지가 나오는 걸 확인 할 수 있습니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/032.jpg" alt="image032">
+<a target="_blank" rel="noopener" href="https://ap-northeast-2.console.aws.amazon.com/cloudwatch">CloudWatch</a>에 들어가면
+위 사진과 같이 우리가 설정해 놓은 알림이 있는 것을 확인 할 수 있습니다.</p>
+<p>이제 이 알림이 울리게 하기 위해 아까의 페이지에서 새로고침을 연타합니다!
+CPU 사용률을 늘려서 AutoScaling이 되는 것을 확인하기 위해서 입니다.
+(물론 설정해 놓은 사용률이 1%여서 굳이 안해도 경보가 울리긴 합니다.)</p>
+<p><img src="/Server/ECS-AutoScaling/033.jpg" alt="image033">
+그러면 이렇게 경보가 생기는 것을 알 수 있습니다.</p>
+<hr>
+<p><img src="/Server/ECS-AutoScaling/034.jpg" alt="image034">
+이제 ECS 대쉬보드로 넘어가면 AutoScaling이 된 것을 확인 할 수 있습니다.</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>EC2 Container Service(ECS) 사용하기 + AutoScaling</p><p><a href="https://blog.hyunsub.kim/Server/ECS-AutoScaling/">https://blog.hyunsub.kim/Server/ECS-AutoScaling/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Hyunsub Kim</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2018-01-30</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/aws/">aws</a><a class="link-muted mr-2" rel="tag" href="/tags/docker/">docker</a><a class="link-muted mr-2" rel="tag" href="/tags/ecs/">ecs</a></div><div class="sharethis-inline-share-buttons"></div><script src="//platform-api.sharethis.com/js/sharethis.js#property=5fd61d47957af60014171af8&amp;product=inline-share-buttons" defer></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/Server/Lambda-APEX/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">APEX로 AWS Lambda 개발하기</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/iOS/Cocoa-Pod-Swift-Version/"><span class="level-item">낮은 Swift 버전을 쓰는 라이브러리 CocoaPod에서 사용하기</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://blog.hyunsub.kim/Server/ECS-AutoScaling/';
+            this.page.identifier = '0a8e0249df03e6e3183d1f2bd396a7d3af78d703';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'blog-hyunsub' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/assets/profile.jpg" alt="Hyunsub Kim"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Hyunsub Kim</p><p class="is-size-6 is-block">(noverish)</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Seoul, Korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">50</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">64</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/noverish" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Résumé" href="https://hyunsub.kim"><i class="fas fa-home"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/noverish"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com/profile.php?id=100008644627377"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/noverish"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="LinkedIn" href="https://www.linkedin.com/in/hyunsub-kim-912a981b2/"><i class="fab fa-linkedin"></i></a></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/AWS/"><span class="level-start"><span class="level-item">AWS</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Android/"><span class="level-start"><span class="level-item">Android</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CI-CD/"><span class="level-start"><span class="level-item">CI/CD</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Docker/"><span class="level-start"><span class="level-item">Docker</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Hadoop/"><span class="level-start"><span class="level-item">Hadoop</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Node/"><span class="level-start"><span class="level-item">Node</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Server/"><span class="level-start"><span class="level-item">Server</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/Spring/"><span class="level-start"><span class="level-item">Spring</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/iOS/"><span class="level-start"><span class="level-item">iOS</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/categories/%EA%B8%B0%ED%83%80/"><span class="level-start"><span class="level-item">기타</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">카탈로그</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-도커-이미지-만들기"><span class="level-left"><span class="level-item">1. 도커 이미지 만들기</span></span></a></li><li><a class="level is-mobile" href="#2-ECS-설정하기"><span class="level-left"><span class="level-item">2. ECS 설정하기</span></span></a></li><li><a class="level is-mobile" href="#2-AutoScaling-설정하기"><span class="level-left"><span class="level-item">2. AutoScaling 설정하기</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2026 Hyunsub Kim</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script><!-- hexo injector body_end start -->
+  <script>
+  (() => {
+    function switchTab() {
+      const defaultTab = document.querySelector('.tabs li a').getAttribute('href').slice(1);
+      const activeTab = (location.hash) ? location.hash.slice(1) : defaultTab;
+
+      document.querySelectorAll('.tab-content').forEach(v => v.classList.add('is-hidden'));
+      document.querySelectorAll('.tabs li').forEach(v => v.classList.remove('is-active'));
+
+      document.querySelectorAll('.' + activeTab).forEach(v => v.classList.remove('is-hidden'));
+      document.querySelectorAll(`a[href="#${activeTab}"]`).forEach(v => v.parentElement.classList.add('is-active'));
+    }
+    switchTab();
+    window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script>
+  <!-- hexo injector body_end end --></body></html>

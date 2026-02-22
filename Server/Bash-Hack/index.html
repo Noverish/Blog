@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Bash Hack - 멋있게 Bash 쓰기 - Hyunsub&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hyunsub Kim"><meta name="msapplication-TileImage" content="/assets/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hyunsub Kim"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta description="자주 마주치는 8가지 상황에서 Bash의 다양한 기능을 이용해 적게 타이핑 하고 문제를 해결해 보자!"><meta property="og:type" content="blog"><meta property="og:title" content="Bash Hack - 멋있게 Bash 쓰기"><meta property="og:url" content="https://blog.hyunsub.kim/Server/Bash-Hack/"><meta property="og:site_name" content="Hyunsub&#039;s Blog"><meta property="og:description" content="자주 마주치는 8가지 상황에서 Bash의 다양한 기능을 이용해 적게 타이핑 하고 문제를 해결해 보자!"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://blog.hyunsub.kim/covers/bash.jpg"><meta property="article:published_time" content="2020-04-25T20:33:00.000Z"><meta property="article:author" content="Hyunsub Kim"><meta property="article:tag" content="bash"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/covers/bash.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.hyunsub.kim/Server/Bash-Hack/"},"headline":"Hyunsub's Blog","image":["https://blog.hyunsub.kim/covers/bash.jpg"],"datePublished":"2020-04-25T20:33:00.000Z","author":{"@type":"Person","name":"Hyunsub Kim"},"description":"자주 마주치는 8가지 상황에서 Bash의 다양한 기능을 이용해 적게 타이핑 하고 문제를 해결해 보자!"}</script><link rel="canonical" href="https://blog.hyunsub.kim/Server/Bash-Hack/"><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Noverish/Blog"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="카탈로그" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/covers/bash.jpg" alt="Bash Hack - 멋있게 Bash 쓰기"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-04-25T20:33:00.000Z" title="2020-04-25T20:33:00.000Z">2020-04-26</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/Server/">Server</a></span><span class="level-item">13분안에 읽기 (약 2012 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile">Bash Hack - 멋있게 Bash 쓰기</h1><div class="content"><p>자주 마주치는 8가지 상황에서 Bash의 다양한 기능을 이용해 적게 타이핑 하고 문제를 해결해 보자!</p>
+<span id="more"></span>
+
+<h1 id="1-깜빡하고-sudo를-입력하지-않음"><a href="#1-깜빡하고-sudo를-입력하지-않음" class="headerlink" title="1. 깜빡하고 sudo를 입력하지 않음"></a>1. 깜빡하고 sudo를 입력하지 않음</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ln -s &#x2F;path&#x2F;to&#x2F;command&#x2F;file &#x2F;usr&#x2F;bin&#x2F;command</span><br><span class="line">$ sudo !!</span><br></pre></td></tr></table></figure>
+
+<p><code>!!</code>는 바로 전에 입력한 명령어를 의미합니다.
+<code>!-n</code>은 n번째 전에 입력한 명령어를 의미합니다.
+따라서 <code>!!</code>와 <code>!-1</code>은 같은 의미입니다.</p>
+<h1 id="2-명령어를-입력하는-데-오타-발생"><a href="#2-명령어를-입력하는-데-오타-발생" class="headerlink" title="2. 명령어를 입력하는 데 오타 발생"></a>2. 명령어를 입력하는 데 오타 발생</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> some very long long lung long <span class="built_in">command</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ^lung^long^</span></span><br></pre></td></tr></table></figure>
+
+<p><code>^old^new^</code>는 가장 최근에 입력한 명령어 중에서 처음으로 찾은 <code>old</code>를 <code>new</code>로 바꾸어 줍니다.</p>
+<h1 id="3-폴더를-만든-후-바로-들어-가기"><a href="#3-폴더를-만든-후-바로-들어-가기" class="headerlink" title="3. 폴더를 만든 후 바로 들어 가기"></a>3. 폴더를 만든 후 바로 들어 가기</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mkdir verylonglongfoldername &amp;&amp; <span class="built_in">cd</span> verylonglongfoldername</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> mkdir verylonglongfoldername &amp;&amp; <span class="built_in">cd</span> <span class="variable">$_</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> ls -al /path/to/list/files</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> <span class="variable">$_</span></span></span><br></pre></td></tr></table></figure>
+
+<p><code>$_</code>는 전에 입력한 명령어 중에 가장 마지막 파라미터를 의미합니다.
+<code>ls</code> 명령어로 뭐가 있는지 확인하고 그 경로로 들어갈 때도 유용합니다.</p>
+<h1 id="4-파일-이름을-일부분만-수정하기"><a href="#4-파일-이름을-일부분만-수정하기" class="headerlink" title="4. 파일 이름을 일부분만 수정하기"></a>4. 파일 이름을 일부분만 수정하기</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ mv &#x2F;path&#x2F;to&#x2F;verylongfilename.txt &#x2F;path&#x2F;to&#x2F;veryshortfilename.txt</span><br><span class="line">$ mv &#x2F;path&#x2F;to&#x2F;verylongfilename.txt !#$:s&#x2F;long&#x2F;short&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>조금 복잡해 보이는데 분해해서 설명하면 다음과 같습니다.</p>
+<ul>
+<li><code>!#</code>: 지금까지 입력란에 입력한 단어들을 의미합니다. 여기서는 <code>mv /path/to/verylongfilename</code> 입니다.</li>
+<li><code>$</code>: 앞에서 찾은 단어들 중에 가장 마지막 단어를 의미합니다.</li>
+<li><code>:s/old/new/</code>: 앞에서 찾은 단어에서 <code>old</code>를 <code>new</code>로 바꿉니다.</li>
+</ul>
+<h1 id="5-지금까지-입력했던-명령어-검색"><a href="#5-지금까지-입력했던-명령어-검색" class="headerlink" title="5. 지금까지 입력했던 명령어 검색"></a>5. 지금까지 입력했던 명령어 검색</h1><p><code>Ctrl + r</code>을 누른 후 검색어를 입력하면 지금까지 입력했던 명령어 중에 검색어가 존재하는 가장 최근 명령어를 보여줍니다.
+여기서 <code>Ctrl + r</code>을 누르면 그 다음 최근 명령어를 보여줍니다.</p>
+<h1 id="6-하나의-명령어를-여러-줄에-입력"><a href="#6-하나의-명령어를-여러-줄에-입력" class="headerlink" title="6. 하나의 명령어를 여러 줄에 입력"></a>6. 하나의 명령어를 여러 줄에 입력</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker run \</span></span><br><span class="line"><span class="bash">    -e port=8080 \</span></span><br><span class="line"><span class="bash">    -e host=0.0.0.0 \</span></span><br><span class="line"><span class="bash">    -p 8080:8080 \</span></span><br><span class="line"><span class="bash">    service:latest</span></span><br></pre></td></tr></table></figure>
+
+<p>위와 같이 역슬래쉬를 입력하고 다음 라인에 명령어를 계속 입력할 수 있습니다.</p>
+<h1 id="7-명령어를-한-번에-여러-개-실행"><a href="#7-명령어를-한-번에-여러-개-실행" class="headerlink" title="7. 명령어를 한 번에 여러 개 실행"></a>7. 명령어를 한 번에 여러 개 실행</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> command1 &amp;&amp; command2</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> command1 || command2</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> command1; command2</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&amp;&amp;</code>: command1이 성공하면 command2도 실행됩니다.</li>
+<li><code>||</code>: command1이 실패하면 command2가 실행됩니다.</li>
+<li><code>;</code>: command1의 성공여부와 상관 없이 command2는 실행됩니다.</li>
+</ul>
+<p>명령어를 그룹화 하고 싶으면 중괄호를 입력하면 됩니다. 중괄호로 그룹화한 명령어들 중에 가장 마지막 명령어 뒤에 세미콜른은 필수적으로 붙여주어야 합니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> command1 &amp;&amp; command2 &amp;&amp; command3 &gt; file</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> &#123; command1 &amp;&amp; command2 &amp;&amp; command3; &#125; &gt; file</span></span><br></pre></td></tr></table></figure>
+
+<p>위의 명령어는 <code>command3</code>의 결과만 file에 기록되고 <code>command1</code>과 <code>command2</code>의 결과는 stdout에 출력됩니다.
+아래의 명령어는 모든 명령어의 결과가 file에 기록됩니다.</p>
+<h1 id="8-명령어를-백그라운드에서-실행"><a href="#8-명령어를-백그라운드에서-실행" class="headerlink" title="8. 명령어를 백그라운드에서 실행"></a>8. 명령어를 백그라운드에서 실행</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> some <span class="built_in">command</span> &amp;</span></span><br></pre></td></tr></table></figure>
+
+<p>명령어 뒤에 <code>&amp;</code>을 붙이면 그 명령어는 백그라운드에서 실행됩니다. 하지만 다음 두 가지의 단점이 있습니다.</p>
+<ul>
+<li>명령어가 실행된 쉘을 종료하면 백그라운드로 실행되는 명령어도 종료됩니다.</li>
+<li>명령어의 output이 현재 쉘에 그대로 출력됩니다.</li>
+</ul>
+<p>따라서 <code>nohup</code>을 이용하는 편이 좋습니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nohup some <span class="built_in">command</span> &amp;</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> nohup some <span class="built_in">command</span> &amp;</span></span><br></pre></td></tr></table></figure>
+
+<p>명령어 앞에 <code>nohup</code>을 뒤에 <code>&amp;</code>를 붙이면 위의 두 가지 단점이 사라집니다.</p>
+<ul>
+<li>명령어가 실행된 쉘을 종료해도 백그라운드로 실행되는 명령어는 유지됩니다.</li>
+<li>명령어의 output은 명령어가 실행된 경로에서 <code>nohup.out</code> 이라는 파일에 기록됩니다.</li>
+</ul>
+<h1 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h1><h2 id="1-현재-사용하고-있는-Shell-이름-알아내기"><a href="#1-현재-사용하고-있는-Shell-이름-알아내기" class="headerlink" title="1) 현재 사용하고 있는 Shell 이름 알아내기"></a>1) 현재 사용하고 있는 Shell 이름 알아내기</h2><ul>
+<li><code>echo $0</code>: 현재 사용하고 있는 Shell 이름 알아내기</li>
+<li><code>echo $SHELL</code>: 기본으로 설정된 Shell 이름 알아내기</li>
+</ul>
+<h2 id="2-단축키-모음"><a href="#2-단축키-모음" class="headerlink" title="2) 단축키 모음"></a>2) 단축키 모음</h2><ul>
+<li><code>Ctrl + a</code>, <code>Home</code>: 커서를 맨 앞으로 옮기기</li>
+<li><code>Ctrl + e</code>, <code>End</code>: 커서를 맨 뒤로 옮기기</li>
+<li><code>Ctrl + l</code>: clear 명령어와 같은 동작을 합니다.</li>
+<li><code>Ctrl + t</code>: 현재 커서에 있는 글자와 그 앞에 있는 글자의 위치를 바꿉니다 (오타 수정용)</li>
+<li><code>Ctrl + r</code>: 지금까지 입력했던 명령어를 역순으로 검색하기 (reverse-search-history)</li>
+<li><code>Ctrl + d</code>: 명령창에 아무 글자도 없을 때 이 키를 입력하면 exit 명령어와 같은 동작을 합니다.</li>
+<li><code>Ctrl + k</code>: 현재 커서 뒤에 있는 글자 들을 삭제합니다.</li>
+<li><code>Ctrl + u</code>: 현재 커서 앞에 있는 글자 들을 삭제합니다.</li>
+<li><code>Ctrl + w</code>: 현재 커서 앞에 있는 가장 가까운 공백까지 삭제합니다.</li>
+<li><code>Ctrl + y</code>: 최근에 삭제한 글자들을 현재 커서 뒤에 입력합니다.</li>
+</ul>
+<p><code>bind -p</code> 명령어로 단축키를 확인할 수 있습니다.</p>
+<h2 id="3-히스토리-이용하기"><a href="#3-히스토리-이용하기" class="headerlink" title="3) 히스토리 이용하기"></a>3) 히스토리 이용하기</h2><h3 id="명령어-지칭"><a href="#명령어-지칭" class="headerlink" title="명령어 지칭"></a>명령어 지칭</h3><ul>
+<li><code>!!</code>: 바로 전에 입력했던 명령어</li>
+<li><code>!n</code>: history에서 n번째 명령어</li>
+<li><code>!-n</code>: n번째로 전에 입력했던 명령어</li>
+<li><code>!string</code>: string으로 시작하는 가장 최근 명령어</li>
+<li><code>!?string</code>: string을 포함하는 가장 최근 명령어</li>
+<li><code>^string1^string2^</code>: 가장 최근 명령어에서 string1을 string2로 바꾼 명령어</li>
+<li><code>!#</code>: 현재 입력란에서 지금까지 입력한 글자들을 지칭함</li>
+</ul>
+<h3 id="단어-지칭"><a href="#단어-지칭" class="headerlink" title="단어 지칭"></a>단어 지칭</h3><p>위의 명령어 지칭을 사용한 후에 <code>:</code>를 입력하여 단어 지칭을 할 수 있습니다.
+단어 지칭이 <code>^</code>, <code>$</code>, <code>*</code>, <code>-</code>, <code>%</code>로 시작하는 경우 <code>:</code>를 생략할 수 있습니다.</p>
+<ul>
+<li><code>n</code>: 지칭된 단어들 중에 n번째 단어를 지칭함 (0 부터 시작함)<ul>
+<li><code>mkdir folder; cd !#:1</code></li>
+<li><code>docker stop service; docker rm !#:2</code></li>
+</ul>
+</li>
+<li><code>$</code>: 지칭된 단어들 중에 마지막 단어를 지칭함</li>
+<li><code>^</code>: 지칭된 단어들 중에 두번째 단어를 지칭함 (명령어를 제외한 첫 번째 argument)</li>
+<li><code>x-y</code>: x번째 부터 y번째 까지의 단어</li>
+<li><code>-y</code>: 0번째 부터 y번째 까지의 단어</li>
+<li><code>*</code>: 첫 번째 단어를 제외한 모든 단어</li>
+<li><code>x*</code>, <code>x-</code>: <code>x-$</code>와 같은 의미</li>
+</ul>
+<p>명령어 지칭이 없이 단어 지칭을 사용하는 경우 바로 전에 입력했던 명령어에서 단어 지칭을 합니다.</p>
+<h3 id="단어-수정"><a href="#단어-수정" class="headerlink" title="단어 수정"></a>단어 수정</h3><p>optional word designator 다음에 단어 수정자를 한 개 이상 나열할 수 있습니다. 각각은 <code>:</code> 뒤에 옵니다.</p>
+<ul>
+<li><code>h</code>: 가장 마지막 pathname component를 삭제합니다.</li>
+<li><code>t</code>: 가장 마지막 pathname component만 남깁니다.</li>
+<li><code>r</code>: 확장자를 삭제합니다.</li>
+<li><code>e</code>: 확장자만 남깁니다.</li>
+<li><code>s/old/new/</code>: 처음 등장하는 old를 new로 바꿉니다. <code>/</code> 대신 다른 구분자를 사용할 수 있고 역슬래쉬를 통해 구분자를 이스케이프 할 수 있습니다. 만약 <code>&amp;</code>가 new에 등장합니다면 이는 old로 치환됩니다. &amp; 또한 역슬래쉬로 이스케이프 할 수 있습니다. 맨 마지막 구분자가 입력 라인의 가장 마지막 글자라면 생략할 수 있습니다.</li>
+<li><code>a</code>, <code>g</code>: 치환을 전체 라인에 대해 적용합니다. <code>s</code>나 <code>&amp;</code> 앞에서 사용합니다. 예) <code>gs/old/new/</code>, <code>g&amp;</code></li>
+<li><code>G</code>: 앞으로 등장하는 모든 치환을 모든 라인에 대해 적용합니다.</li>
+<li><code>q</code>: 모든 단어를 한 번에 따옴표로 감쌉니다.</li>
+<li><code>x</code>: 모든 단어를 각각 따옴표로 감쌉니다. 단어들은 공백, 탭, 개행으로 구분합니다.</li>
+<li><code>&amp;</code>: 가장 최근에 실행한 치환을 다시 반복합니다.</li>
+<li><code>p</code>: 새로운 명령어를 출력하고 실행하지는 않습니다.</li>
+</ul>
+<h2 id="4-quote-‘-와-double-quote-“-의-차이"><a href="#4-quote-‘-와-double-quote-“-의-차이" class="headerlink" title="4) quote(‘)와 double quote(“)의 차이"></a>4) quote(‘)와 double quote(“)의 차이</h2><h3 id="quote-‘"><a href="#quote-‘" class="headerlink" title="quote(‘)"></a>quote(‘)</h3><p>quote(‘) 사이의 어떤 특수문자도 아무런 처리를 하지 않습니다. 따라서 backslash(\)로 quote를 escape 할 수 없습니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> <span class="string">&#x27;$PORT&#x27;</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash">PORT</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> <span class="string">&#x27;!!&#x27;</span></span></span><br><span class="line">!!</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> quote 문자열에서 quote를 출력하고 싶으면 아래처럼 해야 합니다.</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> <span class="string">&#x27;I&#x27;</span>\<span class="string">&#x27;&#x27;</span>m human<span class="string">&#x27;</span></span></span><br><span class="line">I&#x27;m human</span><br></pre></td></tr></table></figure>
+
+<h3 id="double-quote-“"><a href="#double-quote-“" class="headerlink" title="double quote(“)"></a>double quote(“)</h3><p>double quote(“) 사이의 특수문자(!, $, # 등)는 기존 처리방법대로 처리합니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> PORT=8080</span></span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$PORT</span>&quot;</span></span></span><br><span class="line">8080</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> <span class="string">&quot;!!&quot;</span></span></span><br><span class="line">echo 8080</span><br></pre></td></tr></table></figure>
+
+<p>참고 자료</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://ss64.com/bash/syntax-keyboard.html">https://ss64.com/bash/syntax-keyboard.html</a></li>
+<li><a target="_blank" rel="noopener" href="http://tldp.org/LDP/abs/html/special-chars.html">http://tldp.org/LDP/abs/html/special-chars.html</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.gnu.org/software/bash/manual/bash.html">http://www.gnu.org/software/bash/manual/bash.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.lesstif.com/system-admin/bash-readline-line-reverse-search-6717494.html">https://www.lesstif.com/system-admin/bash-readline-line-reverse-search-6717494.html</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Bash Hack - 멋있게 Bash 쓰기</p><p><a href="https://blog.hyunsub.kim/Server/Bash-Hack/">https://blog.hyunsub.kim/Server/Bash-Hack/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Hyunsub Kim</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2020-04-26</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/bash/">bash</a></div><div class="sharethis-inline-share-buttons"></div><script src="//platform-api.sharethis.com/js/sharethis.js#property=5fd61d47957af60014171af8&amp;product=inline-share-buttons" defer></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/Spring/Spring-with-Terminal/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Terminal로 Spring Boot 다루기</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/Docker/Docker-Hub/"><span class="level-item">Docker Hub에 도커 이미지 배포해보기</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://blog.hyunsub.kim/Server/Bash-Hack/';
+            this.page.identifier = '6350540701e6e17afa89e62b36436d631a2c0def';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'blog-hyunsub' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/assets/profile.jpg" alt="Hyunsub Kim"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Hyunsub Kim</p><p class="is-size-6 is-block">(noverish)</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Seoul, Korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">50</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">64</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/noverish" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Résumé" href="https://hyunsub.kim"><i class="fas fa-home"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/noverish"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com/profile.php?id=100008644627377"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/noverish"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="LinkedIn" href="https://www.linkedin.com/in/hyunsub-kim-912a981b2/"><i class="fab fa-linkedin"></i></a></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/AWS/"><span class="level-start"><span class="level-item">AWS</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Android/"><span class="level-start"><span class="level-item">Android</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CI-CD/"><span class="level-start"><span class="level-item">CI/CD</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Docker/"><span class="level-start"><span class="level-item">Docker</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Hadoop/"><span class="level-start"><span class="level-item">Hadoop</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Node/"><span class="level-start"><span class="level-item">Node</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Server/"><span class="level-start"><span class="level-item">Server</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/Spring/"><span class="level-start"><span class="level-item">Spring</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/iOS/"><span class="level-start"><span class="level-item">iOS</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/categories/%EA%B8%B0%ED%83%80/"><span class="level-start"><span class="level-item">기타</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">카탈로그</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-깜빡하고-sudo를-입력하지-않음"><span class="level-left"><span class="level-item">1. 깜빡하고 sudo를 입력하지 않음</span></span></a></li><li><a class="level is-mobile" href="#2-명령어를-입력하는-데-오타-발생"><span class="level-left"><span class="level-item">2. 명령어를 입력하는 데 오타 발생</span></span></a></li><li><a class="level is-mobile" href="#3-폴더를-만든-후-바로-들어-가기"><span class="level-left"><span class="level-item">3. 폴더를 만든 후 바로 들어 가기</span></span></a></li><li><a class="level is-mobile" href="#4-파일-이름을-일부분만-수정하기"><span class="level-left"><span class="level-item">4. 파일 이름을 일부분만 수정하기</span></span></a></li><li><a class="level is-mobile" href="#5-지금까지-입력했던-명령어-검색"><span class="level-left"><span class="level-item">5. 지금까지 입력했던 명령어 검색</span></span></a></li><li><a class="level is-mobile" href="#6-하나의-명령어를-여러-줄에-입력"><span class="level-left"><span class="level-item">6. 하나의 명령어를 여러 줄에 입력</span></span></a></li><li><a class="level is-mobile" href="#7-명령어를-한-번에-여러-개-실행"><span class="level-left"><span class="level-item">7. 명령어를 한 번에 여러 개 실행</span></span></a></li><li><a class="level is-mobile" href="#8-명령어를-백그라운드에서-실행"><span class="level-left"><span class="level-item">8. 명령어를 백그라운드에서 실행</span></span></a></li><li><a class="level is-mobile" href="#Appendix"><span class="level-left"><span class="level-item">Appendix</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2026 Hyunsub Kim</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script><!-- hexo injector body_end start -->
+  <script>
+  (() => {
+    function switchTab() {
+      const defaultTab = document.querySelector('.tabs li a').getAttribute('href').slice(1);
+      const activeTab = (location.hash) ? location.hash.slice(1) : defaultTab;
+
+      document.querySelectorAll('.tab-content').forEach(v => v.classList.add('is-hidden'));
+      document.querySelectorAll('.tabs li').forEach(v => v.classList.remove('is-active'));
+
+      document.querySelectorAll('.' + activeTab).forEach(v => v.classList.remove('is-hidden'));
+      document.querySelectorAll(`a[href="#${activeTab}"]`).forEach(v => v.parentElement.classList.add('is-active'));
+    }
+    switchTab();
+    window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script>
+  <!-- hexo injector body_end end --></body></html>

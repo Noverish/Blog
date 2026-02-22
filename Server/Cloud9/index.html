@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>AWS Cloud9 사용해보기 - Hyunsub&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hyunsub Kim"><meta name="msapplication-TileImage" content="/assets/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hyunsub Kim"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta description="클라우드 IDE인 Cloud9을 통해 언제 어디서나 웹 브라우저를 통해 내 환경에서 개발하는 방법을 알아보겠습니다."><meta property="og:type" content="blog"><meta property="og:title" content="AWS Cloud9 사용해보기"><meta property="og:url" content="https://blog.hyunsub.kim/Server/Cloud9/"><meta property="og:site_name" content="Hyunsub&#039;s Blog"><meta property="og:description" content="클라우드 IDE인 Cloud9을 통해 언제 어디서나 웹 브라우저를 통해 내 환경에서 개발하는 방법을 알아보겠습니다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://blog.hyunsub.kim/covers/cloud9.jpg"><meta property="article:published_time" content="2019-06-01T16:40:00.000Z"><meta property="article:author" content="Hyunsub Kim"><meta property="article:tag" content="cloud9"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/covers/cloud9.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.hyunsub.kim/Server/Cloud9/"},"headline":"Hyunsub's Blog","image":["https://blog.hyunsub.kim/covers/cloud9.jpg"],"datePublished":"2019-06-01T16:40:00.000Z","author":{"@type":"Person","name":"Hyunsub Kim"},"description":"클라우드 IDE인 Cloud9을 통해 언제 어디서나 웹 브라우저를 통해 내 환경에서 개발하는 방법을 알아보겠습니다."}</script><link rel="canonical" href="https://blog.hyunsub.kim/Server/Cloud9/"><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Noverish/Blog"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="카탈로그" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/covers/cloud9.jpg" alt="AWS Cloud9 사용해보기"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-06-01T16:40:00.000Z" title="2019-06-01T16:40:00.000Z">2019-06-02</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/Server/">Server</a></span><span class="level-item">8분안에 읽기 (약 1225 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile">AWS Cloud9 사용해보기</h1><div class="content"><p>클라우드 IDE인 Cloud9을 통해 언제 어디서나 웹 브라우저를 통해 내 환경에서 개발하는 방법을 알아보겠습니다.</p>
+<span id="more"></span>
+
+<h1 id="1-환경-만들기"><a href="#1-환경-만들기" class="headerlink" title="1. 환경 만들기"></a>1. 환경 만들기</h1><p><img src="/Server/Cloud9/000.png" alt="image000"></p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://ap-southeast-1.console.aws.amazon.com/cloud9">Cloud9 콘솔</a>에 들어가서 <code>Create environment</code>를 클릭합니다.</li>
+</ol>
+<hr>
+<p><img src="/Server/Cloud9/001.png" alt="image001"></p>
+<ol start="2">
+<li>Name에 WorkSpace를 적고 Next Step을 클릭합니다.</li>
+</ol>
+<hr>
+<p><img src="/Server/Cloud9/002.png" alt="image002"></p>
+<ol start="3">
+<li>각종 설정을 하고 다음으로 넘어갑니다.</li>
+</ol>
+<ul>
+<li><p>Environment Type :
+새로운 EC2를 만들 것인지 아니면 기존에 있던 서버에 Cloud9환경을 추가할지 선택합니다.
+Cloud9은 무슨 새로운 패키지를 설치하는 것이 아니라 <code>.c9</code> 폴더에 Cloud9 환경 정보를 저장해 놓고 Cloud9에서 서버에 접속해 이 폴더를 사용하는 것 뿐입니다.
+환경을 삭제하려면 단순히 <code>.c9</code> 폴더를 삭제하시면 됩니다.
+저는 새로운 EC2를 만드려고 해서 위와 같은 옵션을 선택했습니다.</p>
+</li>
+<li><p>Instance Type :
+새로운 EC2의 인스턴스 타입을 선택합니다.
+일반적으로 24시간 돌리는 서버와는 다르게 쓰는 만큼만 요금이 나가므로 비교적 비싼 타입을 선택하셔도 됩니다.</p>
+</li>
+<li><p>Platform :
+설치할 OS를 선택합니다. 저는 Ubuntu를 선택했습니다.</p>
+</li>
+<li><p>Cost-saving setting :
+Cloud9 웹 IDE 페이지를 종료한 후 몇 시간 후에 자동으로 EC2를 중지할 지 선택합니다.
+최소 단위가 30분이고 저는 이 옵션을 선택했습니다.</p>
+</li>
+</ul>
+<hr>
+<p><img src="/Server/Cloud9/003.png" alt="image003"></p>
+<ol start="4">
+<li>앞서 설정한 옵션들을 검토하는 화면입니다. 별 문제 없으면 Create environment를 클릭해서 환경을 만듭니다.</li>
+</ol>
+<hr>
+<h1 id="2-보안그룹-설정"><a href="#2-보안그룹-설정" class="headerlink" title="2. 보안그룹 설정"></a>2. 보안그룹 설정</h1><p><img src="/Server/Cloud9/004.png" alt="image004"></p>
+<p>보안 그룹 설정에 본인이 쓰실 포트를 추가해 주시면 됩니다.
+싸지방은 포트가 80번과 443번밖에 안 뚫려있기 때문에 저는 80번과 443번을 추가했습니다.</p>
+<hr>
+<h1 id="3-Apache2-삭제"><a href="#3-Apache2-삭제" class="headerlink" title="3. Apache2 삭제"></a>3. Apache2 삭제</h1><p><img src="/Server/Cloud9/005.png" alt="image005"></p>
+<p>Cloud9을 켜신후 서버의 아이피 주소로 들어가 보시면 위와 같이 Apache2 페이지를 보실 수 있습니다.
+자동으로 Apache2 웹 서버가 구동되어 있기 때문입니다. 저와 같이 Apache2를 쓰지 않으시는 분은 Apache2를 삭제 하셔서 80번 포트를 아무도 안 쓰게 해주셔야 합니다.
+아래의 명령어를 입력해서 Apache2를 삭제합니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo service apache2 stop</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get purge apache2 apache2-utils</span></span><br></pre></td></tr></table></figure>
+
+<p>다른 블로그 같은 곳에서 <code>sudo apt autoremove</code>를 하라는 곳도 있을 텐데 제 경험상 이 걸 하면 기본적으로 설치되어 있는 node가 고장났던 경험이 있습니다.
+알아서 해보시길 바랍니다.</p>
+<p>위의 명령어 만으로 Apache2가 삭제 되지만 완전히 모든 파일이 삭제되지는 않습니다.
+만약 모든 파일을 삭제하시길 원하시면 아래와 같은 명령어로 삭제해 주시길 바랍니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ubuntu:~/environment $ whereis apache2</span><br><span class="line">apache2: /usr/sbin/apache2 /usr/lib/apache2 /etc/apache2 /usr/share/apache2 /usr/share/man/man8/apache2.8.gz</span><br><span class="line">ubuntu:~/environment $ sudo rm -rf /etc/apache2</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="4-기본적으로-설치되어-있는-것들"><a href="#4-기본적으로-설치되어-있는-것들" class="headerlink" title="4. 기본적으로 설치되어 있는 것들"></a>4. 기본적으로 설치되어 있는 것들</h1><p>아래는 기본적으로 설치되어 있는 패키지들 목록입니다.
+제가 모르는 것이 더 있을 수 있습니다.</p>
+<p><img src="/Server/Cloud9/006.png" alt="image006"></p>
+<hr>
+<h1 id="5-간단한-노드-서버-만들어-보기"><a href="#5-간단한-노드-서버-만들어-보기" class="headerlink" title="5. 간단한 노드 서버 만들어 보기"></a>5. 간단한 노드 서버 만들어 보기</h1><p>간단한 노드 서버를 만들어 보도록하겠습니다. 이 과정이 필요 없으신 분들은 건너 뛰셔도 됩니다.</p>
+<p><em>기본적으로 환경 변수 PORT가 8080으로 설정되어 있어 환경 변수를 이용하는 코드를 쓰시는 분들은 주의해주시길 바랍니다. (아래의 명령어 참조)</em></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ubuntu:~/environment/node $ echo $PORT</span><br><span class="line">8080</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>index.js 파일을 만들고 아래와 같이 작성합니다.</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = http.createServer(<span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;hello world&#x27;</span>);</span><br><span class="line">    res.statusCode = <span class="number">200</span>;</span><br><span class="line">    res.end(<span class="string">&#x27;hello world\n&#x27;</span>);</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">server.listen(<span class="number">80</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">   <span class="built_in">console</span>.log(<span class="string">&#x27;Server Start!!&#x27;</span>); </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>아래의 명령어를 통해 서버를 구동하고 서버의 아이피 주소를 이용하여 접속합니다.</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo node index.js</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="6-단축키"><a href="#6-단축키" class="headerlink" title="6. 단축키"></a>6. 단축키</h1><p>Ctrl + S
+저장</p>
+<p>Alt + W
+에디터 탭 닫기</p>
+<p>Alt + N
+새 파일</p>
+<p>Alt + T
+새 터미널</p>
+<p><em>주의사항 : Ctrl + W 는 에디터 창 닫기가 아니라 웹페이지 탭 닫기라서 Cloud9이 꺼져버립니다.</em></p>
+<p>위의 모든 단축키는 설정에서 수정하실 수 있습니다.</p>
+<hr>
+<h1 id="7-파일-업로드-amp-다운로드"><a href="#7-파일-업로드-amp-다운로드" class="headerlink" title="7. 파일 업로드 &amp; 다운로드"></a>7. 파일 업로드 &amp; 다운로드</h1><ol>
+<li>파일 업로드</li>
+</ol>
+<ul>
+<li>Cloud9 왼쪽에 뜨는 폴더 Hierarchy에서 원하시는 디렉토리에 드래그 앤 드롭하시면 됩니다.</li>
+<li>또는 메뉴의 <code>File - Upload Local Files...</code> 를 이용하시면 됩니다.</li>
+</ul>
+<ol start="2">
+<li>파일 다운로드</li>
+</ol>
+<ul>
+<li>Cloud9 왼쪽에 뜨는 폴더 Hierarchy에서 원하시는 파일을 마우스 오른쪽 클릭하시면 다운로드 됩니다.</li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>AWS Cloud9 사용해보기</p><p><a href="https://blog.hyunsub.kim/Server/Cloud9/">https://blog.hyunsub.kim/Server/Cloud9/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Hyunsub Kim</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2019-06-02</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/cloud9/">cloud9</a></div><div class="sharethis-inline-share-buttons"></div><script src="//platform-api.sharethis.com/js/sharethis.js#property=5fd61d47957af60014171af8&amp;product=inline-share-buttons" defer></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/Node/tsconfig/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">tsconfig.json 파헤치기</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/Server/ELK-2/"><span class="level-item">Elastic Stack - Kibana 편</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://blog.hyunsub.kim/Server/Cloud9/';
+            this.page.identifier = '21ba7b57dab0d95431bcfe9c1f043e2479748f82';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'blog-hyunsub' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/assets/profile.jpg" alt="Hyunsub Kim"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Hyunsub Kim</p><p class="is-size-6 is-block">(noverish)</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Seoul, Korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">50</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">64</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/noverish" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Résumé" href="https://hyunsub.kim"><i class="fas fa-home"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/noverish"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com/profile.php?id=100008644627377"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/noverish"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="LinkedIn" href="https://www.linkedin.com/in/hyunsub-kim-912a981b2/"><i class="fab fa-linkedin"></i></a></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/AWS/"><span class="level-start"><span class="level-item">AWS</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Android/"><span class="level-start"><span class="level-item">Android</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CI-CD/"><span class="level-start"><span class="level-item">CI/CD</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Docker/"><span class="level-start"><span class="level-item">Docker</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Hadoop/"><span class="level-start"><span class="level-item">Hadoop</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Node/"><span class="level-start"><span class="level-item">Node</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Server/"><span class="level-start"><span class="level-item">Server</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/Spring/"><span class="level-start"><span class="level-item">Spring</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/iOS/"><span class="level-start"><span class="level-item">iOS</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/categories/%EA%B8%B0%ED%83%80/"><span class="level-start"><span class="level-item">기타</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">카탈로그</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-환경-만들기"><span class="level-left"><span class="level-item">1. 환경 만들기</span></span></a></li><li><a class="level is-mobile" href="#2-보안그룹-설정"><span class="level-left"><span class="level-item">2. 보안그룹 설정</span></span></a></li><li><a class="level is-mobile" href="#3-Apache2-삭제"><span class="level-left"><span class="level-item">3. Apache2 삭제</span></span></a></li><li><a class="level is-mobile" href="#4-기본적으로-설치되어-있는-것들"><span class="level-left"><span class="level-item">4. 기본적으로 설치되어 있는 것들</span></span></a></li><li><a class="level is-mobile" href="#5-간단한-노드-서버-만들어-보기"><span class="level-left"><span class="level-item">5. 간단한 노드 서버 만들어 보기</span></span></a></li><li><a class="level is-mobile" href="#6-단축키"><span class="level-left"><span class="level-item">6. 단축키</span></span></a></li><li><a class="level is-mobile" href="#7-파일-업로드-amp-다운로드"><span class="level-left"><span class="level-item">7. 파일 업로드 &amp; 다운로드</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2026 Hyunsub Kim</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script><!-- hexo injector body_end start -->
+  <script>
+  (() => {
+    function switchTab() {
+      const defaultTab = document.querySelector('.tabs li a').getAttribute('href').slice(1);
+      const activeTab = (location.hash) ? location.hash.slice(1) : defaultTab;
+
+      document.querySelectorAll('.tab-content').forEach(v => v.classList.add('is-hidden'));
+      document.querySelectorAll('.tabs li').forEach(v => v.classList.remove('is-active'));
+
+      document.querySelectorAll('.' + activeTab).forEach(v => v.classList.remove('is-hidden'));
+      document.querySelectorAll(`a[href="#${activeTab}"]`).forEach(v => v.parentElement.classList.add('is-active'));
+    }
+    switchTab();
+    window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script>
+  <!-- hexo injector body_end end --></body></html>

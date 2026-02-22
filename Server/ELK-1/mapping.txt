@@ -1,0 +1,23 @@
+{
+  "properties" : {
+    "class": {
+      "type" : "keyword"
+    },
+    "user": {
+      "type" : "keyword"
+    },
+    "item": {
+      "type" : "keyword"
+    },
+    "quantity": {
+      "type" : "long"
+    },
+    "amount": {
+      "type" : "long"
+    },
+    "purchase_time": {
+      "type" : "date",
+      "format": "yyyy-MM-dd HH:mm:ss"
+    }
+  }
+}

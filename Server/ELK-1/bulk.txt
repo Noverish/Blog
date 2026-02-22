@@ -1,0 +1,2000 @@
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"shirts","quantity":9,"amount":3600,"time":"2019-03-28 18:03:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"note","quantity":3,"amount":21000,"time":"2019-04-03 05:15:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"apple","quantity":5,"amount":500,"time":"2019-04-13 16:25:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"apple","quantity":6,"amount":600,"time":"2019-04-06 02:22:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"eraser","quantity":2,"amount":1800,"time":"2019-05-03 01:33:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"orange","quantity":4,"amount":800,"time":"2019-04-27 20:14:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":7,"amount":700,"time":"2019-03-22 05:58:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"apple","quantity":4,"amount":400,"time":"2019-04-25 01:13:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"orange","quantity":2,"amount":400,"time":"2019-04-04 18:18:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":4,"amount":2000,"time":"2019-04-14 12:23:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-16 21:54:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":2,"amount":14000,"time":"2019-04-15 10:52:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"melon","quantity":1,"amount":5000,"time":"2019-03-22 11:52:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"apple","quantity":7,"amount":700,"time":"2019-04-01 12:27:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"melon","quantity":6,"amount":30000,"time":"2019-04-15 14:22:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"sweater","quantity":9,"amount":54000,"time":"2019-05-12 06:52:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"pen","quantity":5,"amount":15000,"time":"2019-03-23 05:36:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"note","quantity":6,"amount":42000,"time":"2019-03-28 18:59:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"sweater","quantity":4,"amount":24000,"time":"2019-05-15 20:38:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"apple","quantity":8,"amount":800,"time":"2019-03-26 14:28:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"orange","quantity":3,"amount":600,"time":"2019-04-30 22:14:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"paper","quantity":8,"amount":6400,"time":"2019-05-09 14:37:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"sweater","quantity":9,"amount":54000,"time":"2019-04-02 05:34:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":5,"amount":10000,"time":"2019-04-04 07:05:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"scissors","quantity":4,"amount":2800,"time":"2019-03-23 05:53:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"melon","quantity":4,"amount":20000,"time":"2019-03-27 11:26:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":4,"amount":3600,"time":"2019-05-15 14:36:05"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"apple","quantity":4,"amount":400,"time":"2019-04-20 10:55:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"apple","quantity":9,"amount":900,"time":"2019-03-30 22:06:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"note","quantity":5,"amount":35000,"time":"2019-04-29 23:53:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"scissors","quantity":3,"amount":2100,"time":"2019-03-29 00:08:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"lemon","quantity":3,"amount":3000,"time":"2019-04-30 20:42:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"melon","quantity":2,"amount":10000,"time":"2019-05-11 09:37:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":5,"amount":2500,"time":"2019-03-17 12:24:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"coat","quantity":6,"amount":3000,"time":"2019-03-16 13:16:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"dress","quantity":3,"amount":1800,"time":"2019-04-26 07:22:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"coat","quantity":6,"amount":3000,"time":"2019-04-04 00:27:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"eraser","quantity":3,"amount":2700,"time":"2019-05-11 17:44:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"scissors","quantity":3,"amount":2100,"time":"2019-04-05 08:19:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"lemon","quantity":2,"amount":2000,"time":"2019-04-04 13:56:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"apple","quantity":5,"amount":500,"time":"2019-04-28 12:03:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"melon","quantity":7,"amount":35000,"time":"2019-03-18 04:50:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"paper","quantity":6,"amount":4800,"time":"2019-05-07 07:44:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"paper","quantity":3,"amount":2400,"time":"2019-04-26 03:52:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"sweater","quantity":1,"amount":6000,"time":"2019-03-28 11:08:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"dress","quantity":6,"amount":3600,"time":"2019-03-27 01:17:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"lemon","quantity":9,"amount":9000,"time":"2019-05-19 11:05:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"banana","quantity":8,"amount":2400,"time":"2019-04-22 08:07:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"dress","quantity":5,"amount":3000,"time":"2019-05-02 00:17:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"note","quantity":5,"amount":35000,"time":"2019-03-18 00:28:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":5,"amount":3500,"time":"2019-05-07 11:27:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"banana","quantity":9,"amount":2700,"time":"2019-04-29 21:45:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":4,"amount":3200,"time":"2019-04-14 07:50:05"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"orange","quantity":9,"amount":1800,"time":"2019-03-25 16:48:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":2,"amount":1800,"time":"2019-04-10 00:31:05"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"scissors","quantity":3,"amount":2100,"time":"2019-05-18 07:46:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"paper","quantity":9,"amount":7200,"time":"2019-04-17 03:25:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"melon","quantity":8,"amount":40000,"time":"2019-04-11 16:16:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"orange","quantity":7,"amount":1400,"time":"2019-05-12 23:33:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-03 01:48:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-22 04:23:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":2,"amount":1000,"time":"2019-04-04 06:16:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"coat","quantity":8,"amount":4000,"time":"2019-03-15 18:43:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"sweater","quantity":7,"amount":42000,"time":"2019-04-15 19:47:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"note","quantity":7,"amount":49000,"time":"2019-04-28 18:14:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"orange","quantity":9,"amount":1800,"time":"2019-04-11 03:58:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"paper","quantity":7,"amount":5600,"time":"2019-05-20 02:47:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":7,"amount":21000,"time":"2019-04-08 14:35:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"lemon","quantity":3,"amount":3000,"time":"2019-05-10 02:20:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"jacket","quantity":3,"amount":6000,"time":"2019-05-06 19:32:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"note","quantity":4,"amount":28000,"time":"2019-03-20 01:05:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"sweater","quantity":5,"amount":30000,"time":"2019-04-17 04:15:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":2,"amount":1600,"time":"2019-04-10 01:49:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"jacket","quantity":7,"amount":14000,"time":"2019-03-31 02:27:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"scissors","quantity":2,"amount":1400,"time":"2019-05-08 10:11:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"banana","quantity":2,"amount":600,"time":"2019-04-07 03:17:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"apple","quantity":2,"amount":200,"time":"2019-03-21 10:59:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":9,"amount":2700,"time":"2019-04-29 12:06:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":5,"amount":4000,"time":"2019-05-13 06:42:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"coat","quantity":1,"amount":500,"time":"2019-03-20 15:50:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"jacket","quantity":5,"amount":10000,"time":"2019-03-28 12:03:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":5,"amount":2500,"time":"2019-04-08 18:33:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"paper","quantity":2,"amount":1600,"time":"2019-03-18 05:06:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":2,"amount":200,"time":"2019-05-13 03:20:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":8,"amount":7200,"time":"2019-04-20 22:15:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":2,"amount":1400,"time":"2019-03-20 23:37:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"banana","quantity":9,"amount":2700,"time":"2019-04-20 15:08:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"paper","quantity":7,"amount":5600,"time":"2019-03-25 05:27:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"dress","quantity":8,"amount":4800,"time":"2019-03-16 05:03:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"shirts","quantity":1,"amount":400,"time":"2019-03-22 06:58:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"paper","quantity":6,"amount":4800,"time":"2019-03-20 21:13:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"note","quantity":8,"amount":56000,"time":"2019-03-17 21:03:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"scissors","quantity":7,"amount":4900,"time":"2019-03-31 16:16:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"apple","quantity":9,"amount":900,"time":"2019-05-07 12:36:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"eraser","quantity":9,"amount":8100,"time":"2019-03-20 11:07:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"pen","quantity":6,"amount":18000,"time":"2019-05-21 04:50:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"jacket","quantity":6,"amount":12000,"time":"2019-04-09 16:34:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"shirts","quantity":8,"amount":3200,"time":"2019-03-18 20:17:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"eraser","quantity":6,"amount":5400,"time":"2019-04-26 23:12:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":9,"amount":9000,"time":"2019-05-02 03:33:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"sweater","quantity":1,"amount":6000,"time":"2019-03-18 03:13:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"melon","quantity":2,"amount":10000,"time":"2019-04-01 22:00:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"note","quantity":8,"amount":56000,"time":"2019-03-17 05:29:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"note","quantity":8,"amount":56000,"time":"2019-05-07 10:29:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"paper","quantity":7,"amount":5600,"time":"2019-04-03 04:53:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":9,"amount":18000,"time":"2019-03-16 12:25:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"coat","quantity":1,"amount":500,"time":"2019-04-24 12:50:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"eraser","quantity":8,"amount":7200,"time":"2019-03-24 00:10:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":1,"amount":300,"time":"2019-03-30 15:46:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"scissors","quantity":1,"amount":700,"time":"2019-03-16 19:02:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"pen","quantity":5,"amount":15000,"time":"2019-04-11 22:19:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"banana","quantity":3,"amount":900,"time":"2019-05-15 10:18:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"coat","quantity":3,"amount":1500,"time":"2019-05-15 18:31:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":6,"amount":5400,"time":"2019-03-29 07:25:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"note","quantity":7,"amount":49000,"time":"2019-03-18 07:37:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"eraser","quantity":1,"amount":900,"time":"2019-04-30 23:28:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"jacket","quantity":8,"amount":16000,"time":"2019-04-15 10:25:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"banana","quantity":2,"amount":600,"time":"2019-04-02 08:40:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"dress","quantity":7,"amount":4200,"time":"2019-05-13 23:13:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":3,"amount":3000,"time":"2019-04-22 05:45:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"melon","quantity":8,"amount":40000,"time":"2019-04-04 04:41:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"shirts","quantity":9,"amount":3600,"time":"2019-03-18 18:39:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":8,"amount":7200,"time":"2019-03-18 03:09:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"melon","quantity":5,"amount":25000,"time":"2019-05-01 18:31:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"dress","quantity":4,"amount":2400,"time":"2019-04-05 10:13:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"orange","quantity":9,"amount":1800,"time":"2019-05-03 23:27:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"sweater","quantity":4,"amount":24000,"time":"2019-05-05 22:02:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"note","quantity":1,"amount":7000,"time":"2019-04-25 06:28:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"banana","quantity":4,"amount":1200,"time":"2019-03-15 22:45:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"paper","quantity":6,"amount":4800,"time":"2019-04-28 09:17:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"orange","quantity":1,"amount":200,"time":"2019-03-19 01:16:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"melon","quantity":1,"amount":5000,"time":"2019-05-06 05:08:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"orange","quantity":5,"amount":1000,"time":"2019-03-17 10:38:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"pen","quantity":3,"amount":9000,"time":"2019-05-20 04:32:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":7,"amount":2100,"time":"2019-03-14 18:50:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"note","quantity":4,"amount":28000,"time":"2019-05-15 17:02:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"jacket","quantity":5,"amount":10000,"time":"2019-03-17 06:29:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"pen","quantity":4,"amount":12000,"time":"2019-04-19 01:53:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"paper","quantity":7,"amount":5600,"time":"2019-04-19 12:26:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"melon","quantity":9,"amount":45000,"time":"2019-03-18 17:22:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"note","quantity":6,"amount":42000,"time":"2019-05-17 08:19:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"banana","quantity":1,"amount":300,"time":"2019-03-19 13:20:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"note","quantity":9,"amount":63000,"time":"2019-05-06 12:11:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":2,"amount":1000,"time":"2019-05-12 01:19:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"orange","quantity":6,"amount":1200,"time":"2019-03-19 15:57:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"melon","quantity":3,"amount":15000,"time":"2019-05-14 10:06:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":7,"amount":6300,"time":"2019-04-28 21:47:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"note","quantity":2,"amount":14000,"time":"2019-03-30 13:09:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"apple","quantity":2,"amount":200,"time":"2019-05-21 18:47:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"note","quantity":6,"amount":42000,"time":"2019-04-17 14:48:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"orange","quantity":2,"amount":400,"time":"2019-04-14 21:51:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-28 13:59:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"orange","quantity":9,"amount":1800,"time":"2019-05-08 02:12:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"banana","quantity":1,"amount":300,"time":"2019-03-14 13:46:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"paper","quantity":5,"amount":4000,"time":"2019-04-25 07:55:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"paper","quantity":2,"amount":1600,"time":"2019-04-19 06:20:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"eraser","quantity":9,"amount":8100,"time":"2019-03-22 19:01:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":2,"amount":1800,"time":"2019-04-14 02:07:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"eraser","quantity":7,"amount":6300,"time":"2019-05-01 18:40:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"melon","quantity":1,"amount":5000,"time":"2019-05-13 18:03:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"eraser","quantity":2,"amount":1800,"time":"2019-04-28 22:04:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"apple","quantity":1,"amount":100,"time":"2019-05-18 14:35:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"orange","quantity":9,"amount":1800,"time":"2019-05-04 20:18:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-04 12:31:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"sweater","quantity":9,"amount":54000,"time":"2019-03-27 09:38:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":5,"amount":10000,"time":"2019-04-08 14:51:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":2,"amount":2000,"time":"2019-03-21 10:42:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"melon","quantity":9,"amount":45000,"time":"2019-04-07 01:06:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"jacket","quantity":2,"amount":4000,"time":"2019-03-28 06:24:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"note","quantity":6,"amount":42000,"time":"2019-05-12 06:00:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"sweater","quantity":1,"amount":6000,"time":"2019-04-23 22:15:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"melon","quantity":5,"amount":25000,"time":"2019-04-14 16:22:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"coat","quantity":9,"amount":4500,"time":"2019-05-17 09:45:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"melon","quantity":3,"amount":15000,"time":"2019-04-05 08:17:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"orange","quantity":6,"amount":1200,"time":"2019-03-30 09:42:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":3,"amount":2400,"time":"2019-04-22 02:53:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":4,"amount":28000,"time":"2019-04-16 19:18:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"apple","quantity":8,"amount":800,"time":"2019-05-06 05:52:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-25 07:05:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"banana","quantity":5,"amount":1500,"time":"2019-04-21 06:46:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"sweater","quantity":8,"amount":48000,"time":"2019-03-20 06:55:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":6,"amount":5400,"time":"2019-03-23 00:09:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"banana","quantity":7,"amount":2100,"time":"2019-04-05 12:55:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"paper","quantity":3,"amount":2400,"time":"2019-04-22 16:30:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"eraser","quantity":9,"amount":8100,"time":"2019-04-26 14:58:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"coat","quantity":4,"amount":2000,"time":"2019-04-22 07:07:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"sweater","quantity":4,"amount":24000,"time":"2019-04-26 15:57:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"sweater","quantity":9,"amount":54000,"time":"2019-04-05 06:11:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"eraser","quantity":3,"amount":2700,"time":"2019-04-03 13:31:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"dress","quantity":7,"amount":4200,"time":"2019-05-21 04:41:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"banana","quantity":4,"amount":1200,"time":"2019-04-20 19:39:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":7,"amount":49000,"time":"2019-04-03 21:48:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"shirts","quantity":2,"amount":800,"time":"2019-05-21 17:43:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"shirts","quantity":3,"amount":1200,"time":"2019-04-19 17:47:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"dress","quantity":3,"amount":1800,"time":"2019-04-09 15:32:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-05 22:37:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"paper","quantity":1,"amount":800,"time":"2019-04-23 00:00:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":5,"amount":3500,"time":"2019-04-06 22:05:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"apple","quantity":7,"amount":700,"time":"2019-05-22 14:09:05"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"pen","quantity":6,"amount":18000,"time":"2019-05-13 15:22:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"melon","quantity":9,"amount":45000,"time":"2019-04-20 19:53:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"note","quantity":9,"amount":63000,"time":"2019-05-08 10:49:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"dress","quantity":4,"amount":2400,"time":"2019-04-25 09:25:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"jacket","quantity":6,"amount":12000,"time":"2019-03-17 16:33:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"banana","quantity":5,"amount":1500,"time":"2019-04-04 17:18:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"note","quantity":9,"amount":63000,"time":"2019-05-14 18:10:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":5,"amount":4000,"time":"2019-03-14 09:53:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"shirts","quantity":2,"amount":800,"time":"2019-03-30 15:10:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"coat","quantity":4,"amount":2000,"time":"2019-05-13 08:13:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"note","quantity":5,"amount":35000,"time":"2019-04-29 14:45:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"shirts","quantity":7,"amount":2800,"time":"2019-04-01 03:48:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"pen","quantity":7,"amount":21000,"time":"2019-05-17 14:00:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"jacket","quantity":5,"amount":10000,"time":"2019-05-19 03:54:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"banana","quantity":9,"amount":2700,"time":"2019-03-22 07:55:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"shirts","quantity":3,"amount":1200,"time":"2019-03-27 22:57:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"coat","quantity":7,"amount":3500,"time":"2019-05-04 01:12:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"paper","quantity":1,"amount":800,"time":"2019-04-02 05:43:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"banana","quantity":8,"amount":2400,"time":"2019-05-07 02:21:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"eraser","quantity":7,"amount":6300,"time":"2019-05-02 18:08:09"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"note","quantity":7,"amount":49000,"time":"2019-05-17 08:34:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"paper","quantity":5,"amount":4000,"time":"2019-04-05 05:28:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"banana","quantity":2,"amount":600,"time":"2019-05-11 10:31:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"orange","quantity":4,"amount":800,"time":"2019-05-19 18:52:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"dress","quantity":3,"amount":1800,"time":"2019-03-15 12:23:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":2,"amount":6000,"time":"2019-04-25 16:07:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"note","quantity":3,"amount":21000,"time":"2019-03-29 07:16:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"lemon","quantity":1,"amount":1000,"time":"2019-04-23 00:21:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"eraser","quantity":9,"amount":8100,"time":"2019-05-19 15:02:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"eraser","quantity":9,"amount":8100,"time":"2019-05-12 13:44:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":8,"amount":24000,"time":"2019-03-14 19:38:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"sweater","quantity":4,"amount":24000,"time":"2019-04-30 09:47:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"jacket","quantity":1,"amount":2000,"time":"2019-03-25 05:06:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"scissors","quantity":8,"amount":5600,"time":"2019-04-04 10:24:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"lemon","quantity":5,"amount":5000,"time":"2019-05-03 08:27:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"sweater","quantity":5,"amount":30000,"time":"2019-03-25 18:03:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"orange","quantity":6,"amount":1200,"time":"2019-03-21 00:21:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"coat","quantity":1,"amount":500,"time":"2019-05-11 17:29:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"paper","quantity":9,"amount":7200,"time":"2019-05-03 04:39:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"paper","quantity":3,"amount":2400,"time":"2019-04-07 00:14:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"jacket","quantity":8,"amount":16000,"time":"2019-04-26 07:28:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"melon","quantity":1,"amount":5000,"time":"2019-03-22 18:36:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"jacket","quantity":6,"amount":12000,"time":"2019-05-17 02:00:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"dress","quantity":7,"amount":4200,"time":"2019-04-17 16:38:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"apple","quantity":6,"amount":600,"time":"2019-05-01 05:51:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"jacket","quantity":6,"amount":12000,"time":"2019-05-01 19:49:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":1,"amount":800,"time":"2019-04-21 07:41:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"dress","quantity":9,"amount":5400,"time":"2019-05-19 19:00:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"banana","quantity":1,"amount":300,"time":"2019-04-08 07:42:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"note","quantity":6,"amount":42000,"time":"2019-03-25 11:59:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"banana","quantity":5,"amount":1500,"time":"2019-03-19 07:21:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"sweater","quantity":9,"amount":54000,"time":"2019-05-12 05:26:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"eraser","quantity":8,"amount":7200,"time":"2019-04-14 11:32:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":1,"amount":800,"time":"2019-04-25 06:08:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":5,"amount":4500,"time":"2019-04-18 17:36:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-17 12:55:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"orange","quantity":4,"amount":800,"time":"2019-03-29 10:46:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"shirts","quantity":9,"amount":3600,"time":"2019-03-21 07:52:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"shirts","quantity":6,"amount":2400,"time":"2019-05-22 06:36:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":4,"amount":12000,"time":"2019-04-23 08:55:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":6,"amount":5400,"time":"2019-03-29 23:29:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"coat","quantity":3,"amount":1500,"time":"2019-03-26 06:08:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"lemon","quantity":3,"amount":3000,"time":"2019-05-02 15:11:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"apple","quantity":3,"amount":300,"time":"2019-04-01 21:44:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"orange","quantity":6,"amount":1200,"time":"2019-05-21 19:41:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":5,"amount":10000,"time":"2019-03-23 01:26:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"coat","quantity":6,"amount":3000,"time":"2019-03-22 00:52:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"scissors","quantity":2,"amount":1400,"time":"2019-03-17 08:48:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"pen","quantity":3,"amount":9000,"time":"2019-04-07 16:18:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"orange","quantity":2,"amount":400,"time":"2019-04-12 02:42:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":3,"amount":6000,"time":"2019-03-16 18:41:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"lemon","quantity":4,"amount":4000,"time":"2019-05-06 08:34:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"lemon","quantity":8,"amount":8000,"time":"2019-05-11 23:33:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"melon","quantity":4,"amount":20000,"time":"2019-05-20 23:11:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"melon","quantity":9,"amount":45000,"time":"2019-04-19 18:50:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"scissors","quantity":4,"amount":2800,"time":"2019-04-15 19:45:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"banana","quantity":5,"amount":1500,"time":"2019-05-14 19:20:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"paper","quantity":5,"amount":4000,"time":"2019-04-01 21:43:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"dress","quantity":3,"amount":1800,"time":"2019-05-06 22:22:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"coat","quantity":9,"amount":4500,"time":"2019-03-23 00:28:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"sweater","quantity":2,"amount":12000,"time":"2019-04-19 12:23:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":5,"amount":500,"time":"2019-03-18 04:59:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"jacket","quantity":1,"amount":2000,"time":"2019-03-17 23:45:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"melon","quantity":1,"amount":5000,"time":"2019-05-04 03:08:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"scissors","quantity":5,"amount":3500,"time":"2019-04-01 07:25:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"coat","quantity":5,"amount":2500,"time":"2019-04-10 13:52:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"pen","quantity":7,"amount":21000,"time":"2019-05-18 22:36:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"paper","quantity":5,"amount":4000,"time":"2019-04-03 22:33:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-30 04:36:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"scissors","quantity":8,"amount":5600,"time":"2019-04-30 07:06:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"scissors","quantity":2,"amount":1400,"time":"2019-04-19 21:46:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":9,"amount":6300,"time":"2019-03-18 13:16:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":2,"amount":1600,"time":"2019-05-10 12:05:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"note","quantity":7,"amount":49000,"time":"2019-04-29 17:16:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"apple","quantity":2,"amount":200,"time":"2019-04-05 15:34:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"coat","quantity":9,"amount":4500,"time":"2019-05-05 23:21:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"shirts","quantity":7,"amount":2800,"time":"2019-03-22 11:59:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"sweater","quantity":6,"amount":36000,"time":"2019-03-29 08:50:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"sweater","quantity":7,"amount":42000,"time":"2019-03-17 00:14:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"note","quantity":2,"amount":14000,"time":"2019-03-24 02:57:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"shirts","quantity":1,"amount":400,"time":"2019-05-16 06:01:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"lemon","quantity":2,"amount":2000,"time":"2019-04-10 22:34:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"paper","quantity":2,"amount":1600,"time":"2019-05-09 09:04:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"shirts","quantity":2,"amount":800,"time":"2019-03-27 02:05:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"melon","quantity":5,"amount":25000,"time":"2019-04-23 17:30:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"lemon","quantity":8,"amount":8000,"time":"2019-04-16 21:39:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"sweater","quantity":4,"amount":24000,"time":"2019-05-06 09:44:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":1,"amount":800,"time":"2019-05-15 22:36:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-01 14:53:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"eraser","quantity":7,"amount":6300,"time":"2019-04-19 08:14:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":2,"amount":1600,"time":"2019-04-23 21:09:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"eraser","quantity":6,"amount":5400,"time":"2019-05-01 22:46:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"lemon","quantity":6,"amount":6000,"time":"2019-05-09 21:40:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"jacket","quantity":9,"amount":18000,"time":"2019-04-20 18:13:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"scissors","quantity":7,"amount":4900,"time":"2019-04-07 23:30:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"paper","quantity":5,"amount":4000,"time":"2019-05-05 04:47:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"orange","quantity":8,"amount":1600,"time":"2019-04-18 20:59:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"jacket","quantity":3,"amount":6000,"time":"2019-03-18 20:13:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"dress","quantity":5,"amount":3000,"time":"2019-04-22 16:25:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":2,"amount":1000,"time":"2019-04-09 14:22:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"note","quantity":1,"amount":7000,"time":"2019-05-18 15:09:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":6,"amount":1800,"time":"2019-03-19 04:39:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":1,"amount":400,"time":"2019-04-06 03:31:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"apple","quantity":7,"amount":700,"time":"2019-03-17 17:30:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"melon","quantity":2,"amount":10000,"time":"2019-03-27 21:24:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"coat","quantity":6,"amount":3000,"time":"2019-03-26 11:36:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"lemon","quantity":9,"amount":9000,"time":"2019-03-15 13:27:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"banana","quantity":1,"amount":300,"time":"2019-04-06 22:57:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"apple","quantity":6,"amount":600,"time":"2019-04-23 10:17:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"paper","quantity":7,"amount":5600,"time":"2019-05-10 08:21:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"banana","quantity":6,"amount":1800,"time":"2019-05-11 08:37:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"note","quantity":4,"amount":28000,"time":"2019-04-25 00:08:05"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"eraser","quantity":7,"amount":6300,"time":"2019-05-08 23:07:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"paper","quantity":4,"amount":3200,"time":"2019-05-12 09:27:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"coat","quantity":6,"amount":3000,"time":"2019-03-28 12:13:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"eraser","quantity":9,"amount":8100,"time":"2019-03-30 23:39:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":1,"amount":900,"time":"2019-05-21 03:02:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"melon","quantity":5,"amount":25000,"time":"2019-05-11 16:14:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"orange","quantity":2,"amount":400,"time":"2019-03-14 23:17:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"pen","quantity":7,"amount":21000,"time":"2019-05-16 03:36:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"orange","quantity":5,"amount":1000,"time":"2019-05-04 06:29:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"apple","quantity":7,"amount":700,"time":"2019-04-13 14:42:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"banana","quantity":1,"amount":300,"time":"2019-04-27 13:31:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"paper","quantity":5,"amount":4000,"time":"2019-05-01 18:33:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":9,"amount":7200,"time":"2019-03-26 08:22:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"melon","quantity":5,"amount":25000,"time":"2019-05-02 06:56:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":9,"amount":3600,"time":"2019-05-13 05:49:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"shirts","quantity":2,"amount":800,"time":"2019-05-02 06:06:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"coat","quantity":8,"amount":4000,"time":"2019-04-27 07:57:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":3,"amount":900,"time":"2019-03-18 05:25:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"melon","quantity":6,"amount":30000,"time":"2019-05-02 09:01:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"orange","quantity":1,"amount":200,"time":"2019-05-12 00:18:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":9,"amount":18000,"time":"2019-05-15 15:31:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"sweater","quantity":1,"amount":6000,"time":"2019-04-17 03:23:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"apple","quantity":9,"amount":900,"time":"2019-05-10 07:01:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":9,"amount":6300,"time":"2019-05-21 06:29:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"banana","quantity":4,"amount":1200,"time":"2019-05-05 01:34:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"note","quantity":5,"amount":35000,"time":"2019-03-20 18:35:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"sweater","quantity":9,"amount":54000,"time":"2019-03-30 18:26:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"melon","quantity":6,"amount":30000,"time":"2019-05-19 19:45:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"scissors","quantity":4,"amount":2800,"time":"2019-03-30 17:14:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"sweater","quantity":3,"amount":18000,"time":"2019-03-16 23:47:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"melon","quantity":6,"amount":30000,"time":"2019-04-22 14:39:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"scissors","quantity":2,"amount":1400,"time":"2019-04-03 04:54:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":8,"amount":7200,"time":"2019-05-16 23:25:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"eraser","quantity":1,"amount":900,"time":"2019-05-18 16:02:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-29 08:33:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"dress","quantity":5,"amount":3000,"time":"2019-05-07 01:45:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"scissors","quantity":5,"amount":3500,"time":"2019-04-16 11:12:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"dress","quantity":7,"amount":4200,"time":"2019-04-21 01:25:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"melon","quantity":8,"amount":40000,"time":"2019-04-28 03:31:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"shirts","quantity":7,"amount":2800,"time":"2019-05-14 13:20:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"apple","quantity":7,"amount":700,"time":"2019-03-15 10:50:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":4,"amount":400,"time":"2019-05-22 16:39:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"sweater","quantity":7,"amount":42000,"time":"2019-04-09 10:02:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"dress","quantity":9,"amount":5400,"time":"2019-03-24 00:24:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"eraser","quantity":6,"amount":5400,"time":"2019-05-20 05:43:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"coat","quantity":2,"amount":1000,"time":"2019-04-03 10:05:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"paper","quantity":8,"amount":6400,"time":"2019-04-25 07:28:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"banana","quantity":9,"amount":2700,"time":"2019-03-19 21:19:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"scissors","quantity":3,"amount":2100,"time":"2019-03-21 10:21:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":2,"amount":14000,"time":"2019-03-23 18:51:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"pen","quantity":1,"amount":3000,"time":"2019-05-22 19:21:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":8,"amount":56000,"time":"2019-05-19 17:59:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"sweater","quantity":4,"amount":24000,"time":"2019-04-24 22:45:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"lemon","quantity":8,"amount":8000,"time":"2019-04-09 18:46:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"apple","quantity":8,"amount":800,"time":"2019-04-02 04:28:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":2,"amount":4000,"time":"2019-03-31 03:34:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"note","quantity":4,"amount":28000,"time":"2019-04-14 04:08:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"paper","quantity":8,"amount":6400,"time":"2019-05-04 09:55:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"apple","quantity":9,"amount":900,"time":"2019-05-11 12:31:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"pen","quantity":3,"amount":9000,"time":"2019-04-04 13:08:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"banana","quantity":8,"amount":2400,"time":"2019-04-05 18:01:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"orange","quantity":3,"amount":600,"time":"2019-04-05 09:28:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"scissors","quantity":3,"amount":2100,"time":"2019-03-25 13:12:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"apple","quantity":6,"amount":600,"time":"2019-03-15 00:03:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":6,"amount":600,"time":"2019-05-12 13:14:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"pen","quantity":1,"amount":3000,"time":"2019-05-17 17:17:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"dress","quantity":3,"amount":1800,"time":"2019-04-20 23:47:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"apple","quantity":6,"amount":600,"time":"2019-05-03 17:36:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"pen","quantity":2,"amount":6000,"time":"2019-04-12 14:02:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"apple","quantity":4,"amount":400,"time":"2019-03-31 19:11:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"scissors","quantity":9,"amount":6300,"time":"2019-03-21 02:03:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"apple","quantity":5,"amount":500,"time":"2019-03-25 01:24:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":1,"amount":800,"time":"2019-03-30 00:38:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"melon","quantity":4,"amount":20000,"time":"2019-04-11 14:59:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"pen","quantity":4,"amount":12000,"time":"2019-05-06 11:05:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"note","quantity":6,"amount":42000,"time":"2019-04-08 05:47:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"jacket","quantity":2,"amount":4000,"time":"2019-04-29 14:43:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"note","quantity":3,"amount":21000,"time":"2019-03-31 18:30:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"lemon","quantity":4,"amount":4000,"time":"2019-04-12 08:53:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":6,"amount":1800,"time":"2019-05-03 15:59:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"lemon","quantity":9,"amount":9000,"time":"2019-04-30 15:55:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"sweater","quantity":3,"amount":18000,"time":"2019-03-25 17:49:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":8,"amount":2400,"time":"2019-05-22 04:39:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"banana","quantity":7,"amount":2100,"time":"2019-04-24 18:33:05"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"lemon","quantity":4,"amount":4000,"time":"2019-03-17 08:25:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":3,"amount":21000,"time":"2019-04-26 22:50:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"jacket","quantity":6,"amount":12000,"time":"2019-05-15 22:57:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":1,"amount":500,"time":"2019-04-22 02:13:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"scissors","quantity":1,"amount":700,"time":"2019-05-04 07:55:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"jacket","quantity":2,"amount":4000,"time":"2019-04-02 02:37:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"scissors","quantity":3,"amount":2100,"time":"2019-03-16 17:07:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"scissors","quantity":2,"amount":1400,"time":"2019-05-21 04:59:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"pen","quantity":4,"amount":12000,"time":"2019-03-18 08:39:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"paper","quantity":8,"amount":6400,"time":"2019-05-01 13:07:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"paper","quantity":2,"amount":1600,"time":"2019-05-15 05:21:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"melon","quantity":4,"amount":20000,"time":"2019-03-20 11:34:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"dress","quantity":7,"amount":4200,"time":"2019-04-08 19:13:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"note","quantity":6,"amount":42000,"time":"2019-05-05 15:49:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"scissors","quantity":8,"amount":5600,"time":"2019-05-17 10:24:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"apple","quantity":8,"amount":800,"time":"2019-05-05 02:16:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"sweater","quantity":8,"amount":48000,"time":"2019-05-01 11:27:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"eraser","quantity":9,"amount":8100,"time":"2019-03-15 19:39:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"banana","quantity":9,"amount":2700,"time":"2019-05-04 23:36:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"pen","quantity":1,"amount":3000,"time":"2019-05-15 13:15:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"sweater","quantity":2,"amount":12000,"time":"2019-03-27 12:13:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"paper","quantity":5,"amount":4000,"time":"2019-04-09 02:12:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":8,"amount":2400,"time":"2019-04-22 22:25:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"dress","quantity":8,"amount":4800,"time":"2019-03-25 11:10:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"coat","quantity":6,"amount":3000,"time":"2019-04-16 14:52:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"note","quantity":4,"amount":28000,"time":"2019-05-08 14:08:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"paper","quantity":3,"amount":2400,"time":"2019-03-30 09:35:46"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"note","quantity":7,"amount":49000,"time":"2019-05-17 21:11:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"sweater","quantity":7,"amount":42000,"time":"2019-04-02 22:23:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"melon","quantity":7,"amount":35000,"time":"2019-05-04 14:03:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":5,"amount":2500,"time":"2019-03-16 05:32:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":8,"amount":5600,"time":"2019-04-19 18:35:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"lemon","quantity":1,"amount":1000,"time":"2019-04-03 17:36:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"melon","quantity":9,"amount":45000,"time":"2019-04-14 15:59:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"lemon","quantity":4,"amount":4000,"time":"2019-04-25 12:08:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"orange","quantity":2,"amount":400,"time":"2019-05-18 21:50:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"paper","quantity":8,"amount":6400,"time":"2019-03-27 20:49:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"shirts","quantity":2,"amount":800,"time":"2019-05-15 00:10:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"sweater","quantity":2,"amount":12000,"time":"2019-03-25 18:06:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"apple","quantity":8,"amount":800,"time":"2019-05-04 16:02:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"coat","quantity":9,"amount":4500,"time":"2019-03-26 21:08:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"paper","quantity":5,"amount":4000,"time":"2019-05-18 19:51:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"note","quantity":4,"amount":28000,"time":"2019-05-12 02:45:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":7,"amount":5600,"time":"2019-05-05 19:56:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"banana","quantity":9,"amount":2700,"time":"2019-03-24 08:21:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":6,"amount":600,"time":"2019-04-06 04:44:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"paper","quantity":9,"amount":7200,"time":"2019-05-12 15:15:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"paper","quantity":6,"amount":4800,"time":"2019-03-28 15:39:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"scissors","quantity":1,"amount":700,"time":"2019-05-20 09:49:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"paper","quantity":6,"amount":4800,"time":"2019-04-07 17:08:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"note","quantity":4,"amount":28000,"time":"2019-04-02 17:48:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"dress","quantity":8,"amount":4800,"time":"2019-04-21 23:41:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"pen","quantity":2,"amount":6000,"time":"2019-04-02 10:44:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"apple","quantity":9,"amount":900,"time":"2019-03-27 23:41:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"note","quantity":8,"amount":56000,"time":"2019-05-08 07:36:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"lemon","quantity":2,"amount":2000,"time":"2019-03-30 12:44:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"paper","quantity":5,"amount":4000,"time":"2019-03-20 18:37:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"dress","quantity":5,"amount":3000,"time":"2019-03-21 10:05:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"lemon","quantity":8,"amount":8000,"time":"2019-04-21 21:52:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"coat","quantity":7,"amount":3500,"time":"2019-05-13 06:19:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":7,"amount":2800,"time":"2019-04-13 02:37:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":2,"amount":1800,"time":"2019-04-03 00:18:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-16 15:07:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"note","quantity":4,"amount":28000,"time":"2019-05-05 17:16:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"dress","quantity":1,"amount":600,"time":"2019-05-10 13:42:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"orange","quantity":9,"amount":1800,"time":"2019-05-12 05:15:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"jacket","quantity":8,"amount":16000,"time":"2019-05-17 14:42:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"note","quantity":8,"amount":56000,"time":"2019-04-13 06:53:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"jacket","quantity":4,"amount":8000,"time":"2019-03-28 23:16:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"apple","quantity":2,"amount":200,"time":"2019-05-16 13:14:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"note","quantity":4,"amount":28000,"time":"2019-03-19 03:54:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"sweater","quantity":3,"amount":18000,"time":"2019-03-25 12:17:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"pen","quantity":8,"amount":24000,"time":"2019-05-14 05:13:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"jacket","quantity":6,"amount":12000,"time":"2019-03-18 11:35:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"melon","quantity":9,"amount":45000,"time":"2019-03-25 21:16:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":3,"amount":900,"time":"2019-04-25 06:17:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"coat","quantity":2,"amount":1000,"time":"2019-03-20 01:13:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":3,"amount":9000,"time":"2019-04-19 22:33:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"banana","quantity":4,"amount":1200,"time":"2019-04-01 09:45:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"dress","quantity":9,"amount":5400,"time":"2019-05-05 16:38:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"note","quantity":3,"amount":21000,"time":"2019-03-21 21:43:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"apple","quantity":1,"amount":100,"time":"2019-04-04 08:10:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"banana","quantity":4,"amount":1200,"time":"2019-03-18 13:34:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"note","quantity":5,"amount":35000,"time":"2019-04-09 19:16:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":6,"amount":4800,"time":"2019-04-06 15:50:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"note","quantity":3,"amount":21000,"time":"2019-04-07 11:30:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":3,"amount":1500,"time":"2019-05-19 10:56:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":8,"amount":24000,"time":"2019-03-15 05:49:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"dress","quantity":6,"amount":3600,"time":"2019-05-03 13:17:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"shirts","quantity":7,"amount":2800,"time":"2019-03-20 21:32:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":6,"amount":4200,"time":"2019-03-19 16:50:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"banana","quantity":6,"amount":1800,"time":"2019-04-24 20:02:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"banana","quantity":8,"amount":2400,"time":"2019-05-05 20:34:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"orange","quantity":2,"amount":400,"time":"2019-05-06 04:20:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"eraser","quantity":1,"amount":900,"time":"2019-04-30 05:03:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"scissors","quantity":6,"amount":4200,"time":"2019-04-30 14:29:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"note","quantity":7,"amount":49000,"time":"2019-04-14 11:52:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"banana","quantity":8,"amount":2400,"time":"2019-05-10 07:41:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"shirts","quantity":6,"amount":2400,"time":"2019-04-15 18:08:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"sweater","quantity":4,"amount":24000,"time":"2019-04-20 01:44:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"melon","quantity":1,"amount":5000,"time":"2019-04-05 04:30:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"dress","quantity":5,"amount":3000,"time":"2019-03-21 10:18:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"sweater","quantity":1,"amount":6000,"time":"2019-03-23 01:15:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"banana","quantity":9,"amount":2700,"time":"2019-03-21 05:40:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":2,"amount":14000,"time":"2019-04-05 05:53:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"dress","quantity":7,"amount":4200,"time":"2019-03-15 16:05:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":8,"amount":56000,"time":"2019-03-18 15:10:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"orange","quantity":4,"amount":800,"time":"2019-03-26 23:59:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"scissors","quantity":9,"amount":6300,"time":"2019-04-13 02:42:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"orange","quantity":2,"amount":400,"time":"2019-04-08 07:47:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"paper","quantity":5,"amount":4000,"time":"2019-04-17 16:48:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"coat","quantity":6,"amount":3000,"time":"2019-05-19 22:00:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":7,"amount":5600,"time":"2019-04-10 16:57:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"apple","quantity":8,"amount":800,"time":"2019-04-16 06:04:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"dress","quantity":5,"amount":3000,"time":"2019-04-13 23:07:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"melon","quantity":8,"amount":40000,"time":"2019-03-30 18:43:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"note","quantity":1,"amount":7000,"time":"2019-05-05 02:33:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"melon","quantity":4,"amount":20000,"time":"2019-04-03 03:40:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"orange","quantity":8,"amount":1600,"time":"2019-04-06 21:46:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":9,"amount":9000,"time":"2019-05-15 17:25:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-26 22:24:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"melon","quantity":5,"amount":25000,"time":"2019-05-12 05:09:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"scissors","quantity":6,"amount":4200,"time":"2019-03-28 14:39:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"melon","quantity":5,"amount":25000,"time":"2019-04-17 01:11:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"melon","quantity":5,"amount":25000,"time":"2019-04-13 21:45:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"dress","quantity":1,"amount":600,"time":"2019-04-11 10:33:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"note","quantity":2,"amount":14000,"time":"2019-04-17 11:20:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":8,"amount":7200,"time":"2019-05-20 05:05:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"sweater","quantity":6,"amount":36000,"time":"2019-05-09 10:02:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"melon","quantity":3,"amount":15000,"time":"2019-04-06 22:55:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"apple","quantity":7,"amount":700,"time":"2019-03-29 09:37:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":1,"amount":900,"time":"2019-05-05 04:46:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"scissors","quantity":6,"amount":4200,"time":"2019-04-22 11:24:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"pen","quantity":6,"amount":18000,"time":"2019-04-12 12:35:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"orange","quantity":9,"amount":1800,"time":"2019-04-18 05:09:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"dress","quantity":3,"amount":1800,"time":"2019-05-01 13:55:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"scissors","quantity":4,"amount":2800,"time":"2019-04-19 06:32:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"orange","quantity":9,"amount":1800,"time":"2019-04-06 19:20:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"scissors","quantity":2,"amount":1400,"time":"2019-04-30 23:18:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"banana","quantity":5,"amount":1500,"time":"2019-03-17 10:12:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"melon","quantity":7,"amount":35000,"time":"2019-04-30 19:54:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"pen","quantity":8,"amount":24000,"time":"2019-04-11 00:00:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-24 02:28:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":9,"amount":9000,"time":"2019-03-24 08:29:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"pen","quantity":9,"amount":27000,"time":"2019-03-30 10:43:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"shirts","quantity":9,"amount":3600,"time":"2019-05-01 03:08:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"jacket","quantity":4,"amount":8000,"time":"2019-04-28 22:17:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-06 00:17:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"orange","quantity":3,"amount":600,"time":"2019-03-27 20:36:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"dress","quantity":3,"amount":1800,"time":"2019-05-09 03:46:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"melon","quantity":4,"amount":20000,"time":"2019-03-15 05:19:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"coat","quantity":7,"amount":3500,"time":"2019-04-01 18:46:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-08 08:03:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"coat","quantity":8,"amount":4000,"time":"2019-04-19 04:01:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":5,"amount":5000,"time":"2019-04-06 19:13:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"orange","quantity":3,"amount":600,"time":"2019-03-29 13:57:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"melon","quantity":9,"amount":45000,"time":"2019-04-11 05:10:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"dress","quantity":2,"amount":1200,"time":"2019-03-23 02:07:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-01 09:44:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"melon","quantity":8,"amount":40000,"time":"2019-04-04 06:35:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"coat","quantity":4,"amount":2000,"time":"2019-04-16 14:20:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"melon","quantity":6,"amount":30000,"time":"2019-04-21 18:51:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"orange","quantity":1,"amount":200,"time":"2019-04-20 11:43:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"coat","quantity":2,"amount":1000,"time":"2019-05-05 16:07:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"pen","quantity":4,"amount":12000,"time":"2019-05-17 04:37:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":8,"amount":800,"time":"2019-04-13 09:40:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"banana","quantity":4,"amount":1200,"time":"2019-04-15 14:27:09"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"melon","quantity":8,"amount":40000,"time":"2019-03-26 13:26:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"coat","quantity":4,"amount":2000,"time":"2019-05-06 00:17:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"lemon","quantity":9,"amount":9000,"time":"2019-03-19 20:55:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"scissors","quantity":7,"amount":4900,"time":"2019-04-20 15:53:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"eraser","quantity":6,"amount":5400,"time":"2019-04-17 04:27:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"dress","quantity":5,"amount":3000,"time":"2019-05-07 06:25:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"dress","quantity":2,"amount":1200,"time":"2019-05-08 21:50:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"coat","quantity":4,"amount":2000,"time":"2019-04-25 08:41:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"note","quantity":5,"amount":35000,"time":"2019-03-29 20:57:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"shirts","quantity":7,"amount":2800,"time":"2019-05-16 03:42:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"orange","quantity":8,"amount":1600,"time":"2019-03-17 07:15:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"melon","quantity":6,"amount":30000,"time":"2019-05-22 15:59:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"orange","quantity":6,"amount":1200,"time":"2019-03-23 05:22:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"coat","quantity":1,"amount":500,"time":"2019-04-19 06:41:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"jacket","quantity":7,"amount":14000,"time":"2019-04-08 06:51:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":1,"amount":800,"time":"2019-04-17 22:51:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"lemon","quantity":2,"amount":2000,"time":"2019-04-16 19:44:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"apple","quantity":5,"amount":500,"time":"2019-05-19 02:37:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"melon","quantity":4,"amount":20000,"time":"2019-05-21 22:17:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"dress","quantity":3,"amount":1800,"time":"2019-05-03 21:26:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":5,"amount":2500,"time":"2019-05-10 16:17:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":2,"amount":6000,"time":"2019-05-07 18:39:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"lemon","quantity":5,"amount":5000,"time":"2019-04-05 00:06:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"sweater","quantity":8,"amount":48000,"time":"2019-04-24 02:16:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"dress","quantity":2,"amount":1200,"time":"2019-04-26 09:43:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"scissors","quantity":1,"amount":700,"time":"2019-04-10 09:22:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"apple","quantity":1,"amount":100,"time":"2019-04-10 21:30:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"jacket","quantity":7,"amount":14000,"time":"2019-05-13 20:52:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"banana","quantity":2,"amount":600,"time":"2019-05-22 03:53:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"orange","quantity":9,"amount":1800,"time":"2019-05-06 11:17:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"note","quantity":1,"amount":7000,"time":"2019-04-04 23:54:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"melon","quantity":2,"amount":10000,"time":"2019-05-15 05:46:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"melon","quantity":4,"amount":20000,"time":"2019-05-05 06:41:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":2,"amount":6000,"time":"2019-04-19 03:48:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"pen","quantity":7,"amount":21000,"time":"2019-03-24 09:12:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"shirts","quantity":4,"amount":1600,"time":"2019-05-07 14:32:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"apple","quantity":3,"amount":300,"time":"2019-03-24 11:42:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"scissors","quantity":8,"amount":5600,"time":"2019-04-26 18:31:09"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"coat","quantity":5,"amount":2500,"time":"2019-03-29 17:11:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"dress","quantity":1,"amount":600,"time":"2019-04-21 11:43:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"eraser","quantity":3,"amount":2700,"time":"2019-05-19 15:42:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"shirts","quantity":4,"amount":1600,"time":"2019-04-18 00:47:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"sweater","quantity":4,"amount":24000,"time":"2019-04-10 16:07:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"paper","quantity":2,"amount":1600,"time":"2019-04-12 12:17:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"note","quantity":4,"amount":28000,"time":"2019-05-12 21:26:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"orange","quantity":6,"amount":1200,"time":"2019-04-28 00:24:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"orange","quantity":6,"amount":1200,"time":"2019-04-09 23:29:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":7,"amount":6300,"time":"2019-05-16 12:55:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"dress","quantity":7,"amount":4200,"time":"2019-03-20 17:30:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"lemon","quantity":3,"amount":3000,"time":"2019-03-27 18:09:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"lemon","quantity":5,"amount":5000,"time":"2019-05-03 15:09:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"dress","quantity":8,"amount":4800,"time":"2019-04-10 13:09:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"shirts","quantity":7,"amount":2800,"time":"2019-03-31 11:07:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":8,"amount":16000,"time":"2019-04-05 14:24:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"dress","quantity":2,"amount":1200,"time":"2019-04-15 04:05:05"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"shirts","quantity":8,"amount":3200,"time":"2019-04-03 05:01:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"melon","quantity":6,"amount":30000,"time":"2019-03-24 23:17:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"jacket","quantity":2,"amount":4000,"time":"2019-05-05 09:32:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"dress","quantity":7,"amount":4200,"time":"2019-04-30 07:46:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"banana","quantity":2,"amount":600,"time":"2019-03-23 16:45:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"pen","quantity":8,"amount":24000,"time":"2019-05-18 16:04:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"scissors","quantity":7,"amount":4900,"time":"2019-03-16 23:11:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"banana","quantity":5,"amount":1500,"time":"2019-03-14 22:08:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"lemon","quantity":1,"amount":1000,"time":"2019-04-26 14:03:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"scissors","quantity":9,"amount":6300,"time":"2019-04-19 05:57:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"scissors","quantity":6,"amount":4200,"time":"2019-04-20 10:41:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"eraser","quantity":6,"amount":5400,"time":"2019-04-11 18:36:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-17 10:49:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"note","quantity":5,"amount":35000,"time":"2019-05-16 05:51:46"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"eraser","quantity":4,"amount":3600,"time":"2019-04-29 14:00:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"coat","quantity":4,"amount":2000,"time":"2019-04-09 08:34:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"coat","quantity":5,"amount":2500,"time":"2019-05-04 16:48:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"eraser","quantity":6,"amount":5400,"time":"2019-04-14 18:40:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"shirts","quantity":3,"amount":1200,"time":"2019-04-21 21:12:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"paper","quantity":4,"amount":3200,"time":"2019-03-30 04:46:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"dress","quantity":8,"amount":4800,"time":"2019-03-21 01:51:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":8,"amount":6400,"time":"2019-05-14 02:07:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"shirts","quantity":7,"amount":2800,"time":"2019-04-13 16:07:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"lemon","quantity":8,"amount":8000,"time":"2019-04-30 22:36:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"apple","quantity":8,"amount":800,"time":"2019-04-29 15:48:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"apple","quantity":2,"amount":200,"time":"2019-04-17 22:06:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"note","quantity":2,"amount":14000,"time":"2019-03-20 19:28:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":1,"amount":900,"time":"2019-03-27 06:04:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":5,"amount":2000,"time":"2019-05-01 04:45:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-13 01:17:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"dress","quantity":6,"amount":3600,"time":"2019-04-03 23:09:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-11 23:28:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"scissors","quantity":9,"amount":6300,"time":"2019-04-30 07:49:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"eraser","quantity":2,"amount":1800,"time":"2019-04-16 04:17:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"coat","quantity":9,"amount":4500,"time":"2019-03-21 00:34:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"melon","quantity":6,"amount":30000,"time":"2019-03-17 23:42:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"orange","quantity":2,"amount":400,"time":"2019-05-22 03:11:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"eraser","quantity":3,"amount":2700,"time":"2019-03-23 01:17:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"lemon","quantity":1,"amount":1000,"time":"2019-05-08 16:13:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"sweater","quantity":3,"amount":18000,"time":"2019-05-21 21:04:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"note","quantity":1,"amount":7000,"time":"2019-03-26 06:19:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"dress","quantity":5,"amount":3000,"time":"2019-05-17 13:01:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"banana","quantity":5,"amount":1500,"time":"2019-04-10 10:57:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"shirts","quantity":8,"amount":3200,"time":"2019-04-30 04:10:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"apple","quantity":9,"amount":900,"time":"2019-03-21 22:53:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"melon","quantity":8,"amount":40000,"time":"2019-05-07 21:29:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"banana","quantity":6,"amount":1800,"time":"2019-05-21 03:02:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"paper","quantity":3,"amount":2400,"time":"2019-05-16 13:06:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"orange","quantity":1,"amount":200,"time":"2019-05-03 22:16:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"shirts","quantity":7,"amount":2800,"time":"2019-05-19 07:33:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":3,"amount":3000,"time":"2019-04-27 07:44:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"banana","quantity":9,"amount":2700,"time":"2019-04-02 02:26:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"banana","quantity":7,"amount":2100,"time":"2019-04-06 09:34:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"lemon","quantity":3,"amount":3000,"time":"2019-05-03 12:36:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"coat","quantity":8,"amount":4000,"time":"2019-04-12 03:04:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"paper","quantity":7,"amount":5600,"time":"2019-05-02 17:37:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":6,"amount":3000,"time":"2019-05-03 19:34:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"coat","quantity":7,"amount":3500,"time":"2019-03-24 12:51:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"orange","quantity":6,"amount":1200,"time":"2019-04-05 11:35:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-14 09:27:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"melon","quantity":1,"amount":5000,"time":"2019-04-29 23:50:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":4,"amount":2800,"time":"2019-04-11 05:49:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"orange","quantity":1,"amount":200,"time":"2019-05-06 09:58:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"apple","quantity":4,"amount":400,"time":"2019-05-12 10:39:46"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"pen","quantity":4,"amount":12000,"time":"2019-05-20 07:07:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":1,"amount":300,"time":"2019-04-13 13:20:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"dress","quantity":8,"amount":4800,"time":"2019-04-23 18:25:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":5,"amount":15000,"time":"2019-03-29 09:15:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"sweater","quantity":6,"amount":36000,"time":"2019-05-06 22:38:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"sweater","quantity":1,"amount":6000,"time":"2019-03-31 07:56:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"paper","quantity":4,"amount":3200,"time":"2019-04-24 10:42:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"scissors","quantity":9,"amount":6300,"time":"2019-04-28 15:48:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"banana","quantity":4,"amount":1200,"time":"2019-04-04 13:05:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"apple","quantity":9,"amount":900,"time":"2019-05-02 15:27:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"shirts","quantity":7,"amount":2800,"time":"2019-03-25 21:09:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"melon","quantity":6,"amount":30000,"time":"2019-05-11 14:21:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"dress","quantity":4,"amount":2400,"time":"2019-04-07 19:09:09"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"dress","quantity":2,"amount":1200,"time":"2019-03-26 04:13:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"shirts","quantity":6,"amount":2400,"time":"2019-04-14 00:01:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"melon","quantity":3,"amount":15000,"time":"2019-03-14 14:32:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"paper","quantity":7,"amount":5600,"time":"2019-03-15 23:28:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"coat","quantity":4,"amount":2000,"time":"2019-04-17 15:53:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":9,"amount":2700,"time":"2019-05-17 06:19:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"melon","quantity":6,"amount":30000,"time":"2019-04-07 17:06:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"banana","quantity":9,"amount":2700,"time":"2019-03-27 17:17:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"jacket","quantity":9,"amount":18000,"time":"2019-03-28 06:13:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":8,"amount":8000,"time":"2019-04-09 09:20:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"orange","quantity":9,"amount":1800,"time":"2019-05-05 23:10:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"lemon","quantity":1,"amount":1000,"time":"2019-04-05 11:01:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"lemon","quantity":1,"amount":1000,"time":"2019-04-09 07:40:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":2,"amount":1800,"time":"2019-04-28 20:25:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":4,"amount":3200,"time":"2019-05-15 01:44:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"melon","quantity":4,"amount":20000,"time":"2019-04-18 16:27:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"shirts","quantity":6,"amount":2400,"time":"2019-03-27 06:42:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"melon","quantity":1,"amount":5000,"time":"2019-04-21 07:08:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"banana","quantity":1,"amount":300,"time":"2019-04-28 18:24:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":3,"amount":2700,"time":"2019-04-18 08:06:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"sweater","quantity":7,"amount":42000,"time":"2019-04-11 12:05:05"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"sweater","quantity":3,"amount":18000,"time":"2019-04-28 07:23:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"eraser","quantity":4,"amount":3600,"time":"2019-04-09 21:27:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"dress","quantity":3,"amount":1800,"time":"2019-04-22 03:58:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"jacket","quantity":8,"amount":16000,"time":"2019-04-16 04:33:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"scissors","quantity":9,"amount":6300,"time":"2019-04-24 22:37:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"banana","quantity":7,"amount":2100,"time":"2019-04-26 04:33:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"dress","quantity":6,"amount":3600,"time":"2019-03-16 01:59:46"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"dress","quantity":5,"amount":3000,"time":"2019-04-13 17:32:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"banana","quantity":5,"amount":1500,"time":"2019-03-22 21:54:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"melon","quantity":1,"amount":5000,"time":"2019-04-11 02:41:18"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"shirts","quantity":1,"amount":400,"time":"2019-05-06 17:46:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"orange","quantity":8,"amount":1600,"time":"2019-03-21 15:04:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"coat","quantity":9,"amount":4500,"time":"2019-04-06 15:03:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"coat","quantity":7,"amount":3500,"time":"2019-03-25 10:52:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"jacket","quantity":4,"amount":8000,"time":"2019-03-20 07:56:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"pen","quantity":3,"amount":9000,"time":"2019-05-21 01:49:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"apple","quantity":8,"amount":800,"time":"2019-03-15 22:21:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"melon","quantity":7,"amount":35000,"time":"2019-04-20 12:13:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":7,"amount":2800,"time":"2019-04-01 18:48:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":9,"amount":63000,"time":"2019-04-05 13:45:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"coat","quantity":6,"amount":3000,"time":"2019-03-18 14:38:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":9,"amount":900,"time":"2019-04-26 20:11:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"lemon","quantity":4,"amount":4000,"time":"2019-04-26 08:12:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"banana","quantity":1,"amount":300,"time":"2019-05-16 22:17:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"lemon","quantity":2,"amount":2000,"time":"2019-05-08 03:42:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-04 19:21:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":6,"amount":3000,"time":"2019-04-03 15:45:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"banana","quantity":3,"amount":900,"time":"2019-04-25 10:10:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"dress","quantity":1,"amount":600,"time":"2019-05-19 16:03:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"dress","quantity":4,"amount":2400,"time":"2019-05-08 12:36:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"orange","quantity":4,"amount":800,"time":"2019-04-13 03:09:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"jacket","quantity":8,"amount":16000,"time":"2019-03-20 15:58:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"eraser","quantity":5,"amount":4500,"time":"2019-05-13 11:51:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"dress","quantity":7,"amount":4200,"time":"2019-03-19 22:13:41"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"melon","quantity":8,"amount":40000,"time":"2019-03-24 15:28:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"dress","quantity":8,"amount":4800,"time":"2019-05-01 14:58:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"jacket","quantity":3,"amount":6000,"time":"2019-04-30 21:29:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"lemon","quantity":2,"amount":2000,"time":"2019-04-29 03:02:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"sweater","quantity":7,"amount":42000,"time":"2019-04-10 23:23:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"jacket","quantity":4,"amount":8000,"time":"2019-05-03 05:53:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"sweater","quantity":8,"amount":48000,"time":"2019-03-31 00:00:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"pen","quantity":5,"amount":15000,"time":"2019-05-16 23:08:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"shirts","quantity":3,"amount":1200,"time":"2019-04-09 17:15:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"orange","quantity":2,"amount":400,"time":"2019-04-06 01:32:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"jacket","quantity":9,"amount":18000,"time":"2019-03-22 14:18:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"lemon","quantity":5,"amount":5000,"time":"2019-04-23 10:31:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"apple","quantity":2,"amount":200,"time":"2019-05-13 07:25:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"coat","quantity":2,"amount":1000,"time":"2019-03-23 10:21:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"orange","quantity":6,"amount":1200,"time":"2019-04-03 22:05:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"banana","quantity":2,"amount":600,"time":"2019-03-29 01:24:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"paper","quantity":1,"amount":800,"time":"2019-04-08 22:11:46"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"sweater","quantity":2,"amount":12000,"time":"2019-03-24 06:20:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"note","quantity":2,"amount":14000,"time":"2019-04-18 14:03:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"sweater","quantity":4,"amount":24000,"time":"2019-05-16 17:28:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"scissors","quantity":2,"amount":1400,"time":"2019-04-07 23:34:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"orange","quantity":9,"amount":1800,"time":"2019-04-29 07:59:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"jacket","quantity":7,"amount":14000,"time":"2019-05-18 06:44:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"apple","quantity":5,"amount":500,"time":"2019-03-24 03:46:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"note","quantity":6,"amount":42000,"time":"2019-04-05 02:33:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"eraser","quantity":8,"amount":7200,"time":"2019-03-22 13:42:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"coat","quantity":4,"amount":2000,"time":"2019-03-15 11:10:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"jacket","quantity":7,"amount":14000,"time":"2019-05-16 09:46:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"banana","quantity":7,"amount":2100,"time":"2019-05-15 13:33:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"eraser","quantity":4,"amount":3600,"time":"2019-05-02 07:09:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"paper","quantity":5,"amount":4000,"time":"2019-04-09 17:53:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"lemon","quantity":4,"amount":4000,"time":"2019-05-17 09:18:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":3,"amount":1500,"time":"2019-05-03 14:21:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"shirts","quantity":2,"amount":800,"time":"2019-04-21 15:21:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"lemon","quantity":9,"amount":9000,"time":"2019-03-20 14:20:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"apple","quantity":1,"amount":100,"time":"2019-05-19 16:18:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"banana","quantity":4,"amount":1200,"time":"2019-03-27 16:20:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":6,"amount":2400,"time":"2019-05-07 07:53:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"jacket","quantity":6,"amount":12000,"time":"2019-04-17 04:54:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"sweater","quantity":6,"amount":36000,"time":"2019-04-03 16:43:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"paper","quantity":8,"amount":6400,"time":"2019-03-25 12:07:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"pen","quantity":6,"amount":18000,"time":"2019-05-14 02:41:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"jackson","item":"lemon","quantity":7,"amount":7000,"time":"2019-05-18 23:59:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"scissors","quantity":5,"amount":3500,"time":"2019-05-17 07:43:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"scissors","quantity":3,"amount":2100,"time":"2019-04-28 00:11:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"sweater","quantity":7,"amount":42000,"time":"2019-04-20 23:35:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":3,"amount":2400,"time":"2019-04-17 21:48:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"scissors","quantity":1,"amount":700,"time":"2019-04-01 23:40:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"banana","quantity":1,"amount":300,"time":"2019-05-17 03:11:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"melon","quantity":4,"amount":20000,"time":"2019-05-09 21:40:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"lemon","quantity":2,"amount":2000,"time":"2019-05-21 20:33:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"scissors","quantity":1,"amount":700,"time":"2019-04-13 18:25:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"pen","quantity":7,"amount":21000,"time":"2019-05-10 01:55:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"shirts","quantity":2,"amount":800,"time":"2019-05-03 04:11:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"eraser","quantity":6,"amount":5400,"time":"2019-04-03 21:21:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"pen","quantity":3,"amount":9000,"time":"2019-04-22 22:52:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"orange","quantity":3,"amount":600,"time":"2019-04-13 06:12:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":3,"amount":2700,"time":"2019-05-20 22:58:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"eraser","quantity":1,"amount":900,"time":"2019-03-26 14:28:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"note","quantity":5,"amount":35000,"time":"2019-03-29 15:15:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"melon","quantity":5,"amount":25000,"time":"2019-04-17 17:19:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"pen","quantity":1,"amount":3000,"time":"2019-05-13 10:48:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"jacket","quantity":2,"amount":4000,"time":"2019-03-28 07:28:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"shirts","quantity":1,"amount":400,"time":"2019-03-21 04:24:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"scissors","quantity":2,"amount":1400,"time":"2019-05-14 13:45:11"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"jacket","quantity":7,"amount":14000,"time":"2019-05-15 18:23:09"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"lemon","quantity":9,"amount":9000,"time":"2019-05-09 09:16:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"pen","quantity":7,"amount":21000,"time":"2019-04-05 08:41:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"orange","quantity":6,"amount":1200,"time":"2019-03-20 09:43:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"sweater","quantity":4,"amount":24000,"time":"2019-05-17 16:50:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":4,"amount":3200,"time":"2019-03-23 14:57:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"eraser","quantity":7,"amount":6300,"time":"2019-03-23 13:51:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"sweater","quantity":4,"amount":24000,"time":"2019-04-17 16:28:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"note","quantity":5,"amount":35000,"time":"2019-03-26 17:12:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"scissors","quantity":1,"amount":700,"time":"2019-04-09 10:27:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"paper","quantity":3,"amount":2400,"time":"2019-04-15 14:22:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":7,"amount":2800,"time":"2019-04-23 02:35:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"dress","quantity":5,"amount":3000,"time":"2019-03-31 02:04:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"scissors","quantity":5,"amount":3500,"time":"2019-04-08 15:49:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"note","quantity":6,"amount":42000,"time":"2019-03-31 18:35:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"scissors","quantity":9,"amount":6300,"time":"2019-05-22 05:47:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"shirts","quantity":5,"amount":2000,"time":"2019-05-17 12:30:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"emily","item":"scissors","quantity":2,"amount":1400,"time":"2019-05-09 12:27:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"jacket","quantity":6,"amount":12000,"time":"2019-04-27 19:33:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"apple","quantity":7,"amount":700,"time":"2019-03-30 04:03:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"melon","quantity":8,"amount":40000,"time":"2019-05-08 21:49:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"apple","quantity":9,"amount":900,"time":"2019-03-26 04:42:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"coat","quantity":1,"amount":500,"time":"2019-05-18 21:20:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"orange","quantity":6,"amount":1200,"time":"2019-05-04 10:03:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"pen","quantity":9,"amount":27000,"time":"2019-04-28 00:55:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"coat","quantity":1,"amount":500,"time":"2019-03-29 20:11:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"pen","quantity":4,"amount":12000,"time":"2019-04-08 18:07:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-19 01:54:55"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"dress","quantity":4,"amount":2400,"time":"2019-03-26 16:02:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"melon","quantity":9,"amount":45000,"time":"2019-05-01 10:33:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"shirts","quantity":5,"amount":2000,"time":"2019-04-30 18:48:22"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"orange","quantity":9,"amount":1800,"time":"2019-05-01 16:26:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"scissors","quantity":2,"amount":1400,"time":"2019-03-29 22:02:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"melon","quantity":6,"amount":30000,"time":"2019-05-06 10:51:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":9,"amount":7200,"time":"2019-03-29 01:48:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"melon","quantity":6,"amount":30000,"time":"2019-04-18 16:49:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"coat","quantity":5,"amount":2500,"time":"2019-05-16 06:27:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"scissors","quantity":6,"amount":4200,"time":"2019-05-07 06:51:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"eraser","quantity":5,"amount":4500,"time":"2019-03-21 16:26:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"sweater","quantity":8,"amount":48000,"time":"2019-04-23 01:22:54"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"eraser","quantity":3,"amount":2700,"time":"2019-04-16 11:49:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"sweater","quantity":6,"amount":36000,"time":"2019-04-20 00:48:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"pen","quantity":4,"amount":12000,"time":"2019-03-19 04:37:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"orange","quantity":7,"amount":1400,"time":"2019-04-22 16:50:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"shirts","quantity":3,"amount":1200,"time":"2019-04-18 09:59:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"pen","quantity":3,"amount":9000,"time":"2019-04-14 09:27:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"paper","quantity":4,"amount":3200,"time":"2019-04-15 09:06:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"sweater","quantity":5,"amount":30000,"time":"2019-04-21 00:23:34"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"apple","quantity":7,"amount":700,"time":"2019-05-09 05:08:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"orange","quantity":9,"amount":1800,"time":"2019-03-29 15:02:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"coat","quantity":3,"amount":1500,"time":"2019-04-15 23:47:52"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"sweater","quantity":4,"amount":24000,"time":"2019-05-07 18:56:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"jacket","quantity":5,"amount":10000,"time":"2019-04-15 05:03:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"dress","quantity":1,"amount":600,"time":"2019-04-28 12:44:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"note","quantity":9,"amount":63000,"time":"2019-05-13 17:50:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"dress","quantity":4,"amount":2400,"time":"2019-05-12 11:21:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"lemon","quantity":1,"amount":1000,"time":"2019-03-20 11:40:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":4,"amount":8000,"time":"2019-05-04 05:13:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"orange","quantity":6,"amount":1200,"time":"2019-04-05 11:57:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":9,"amount":6300,"time":"2019-04-21 20:10:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"paper","quantity":8,"amount":6400,"time":"2019-04-10 14:45:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"smith","item":"orange","quantity":8,"amount":1600,"time":"2019-05-12 10:54:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"coat","quantity":8,"amount":4000,"time":"2019-03-25 05:20:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"shirts","quantity":1,"amount":400,"time":"2019-05-08 11:05:17"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"orange","quantity":2,"amount":400,"time":"2019-05-14 07:38:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"adam","item":"dress","quantity":9,"amount":5400,"time":"2019-03-27 09:50:08"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":9,"amount":900,"time":"2019-05-17 10:37:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"orange","quantity":5,"amount":1000,"time":"2019-05-18 09:37:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"coat","quantity":2,"amount":1000,"time":"2019-04-21 09:20:25"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"apple","quantity":6,"amount":600,"time":"2019-03-26 17:07:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"lemon","quantity":2,"amount":2000,"time":"2019-03-15 05:18:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"lucas","item":"note","quantity":2,"amount":14000,"time":"2019-04-28 20:40:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"dress","quantity":9,"amount":5400,"time":"2019-04-13 17:25:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":7,"amount":7000,"time":"2019-03-27 02:13:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"eraser","quantity":3,"amount":2700,"time":"2019-04-14 21:47:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"apple","quantity":3,"amount":300,"time":"2019-04-26 15:10:27"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"coat","quantity":9,"amount":4500,"time":"2019-04-21 10:58:21"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"dress","quantity":7,"amount":4200,"time":"2019-03-31 04:21:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"paper","quantity":7,"amount":5600,"time":"2019-03-27 06:10:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"orange","quantity":3,"amount":600,"time":"2019-05-14 13:59:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"lemon","quantity":3,"amount":3000,"time":"2019-05-11 20:58:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"coat","quantity":5,"amount":2500,"time":"2019-04-29 12:00:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"orange","quantity":9,"amount":1800,"time":"2019-03-30 11:19:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"adam","item":"lemon","quantity":2,"amount":2000,"time":"2019-04-03 10:53:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"sweater","quantity":1,"amount":6000,"time":"2019-04-24 19:37:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"scissors","quantity":7,"amount":4900,"time":"2019-04-09 00:48:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"eraser","quantity":1,"amount":900,"time":"2019-04-03 23:54:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"orange","quantity":3,"amount":600,"time":"2019-04-24 12:12:53"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"scissors","quantity":6,"amount":4200,"time":"2019-03-25 11:07:44"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"coat","quantity":8,"amount":4000,"time":"2019-05-17 17:34:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"peter","item":"note","quantity":8,"amount":56000,"time":"2019-04-04 20:30:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"shirts","quantity":7,"amount":2800,"time":"2019-04-21 15:13:40"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"sweater","quantity":5,"amount":30000,"time":"2019-04-18 21:13:00"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"john","item":"jacket","quantity":5,"amount":10000,"time":"2019-05-14 08:09:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"lemon","quantity":7,"amount":7000,"time":"2019-04-27 21:54:07"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"david","item":"banana","quantity":3,"amount":900,"time":"2019-05-22 07:56:30"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"shirts","quantity":9,"amount":3600,"time":"2019-04-12 00:08:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"pen","quantity":2,"amount":6000,"time":"2019-04-22 12:33:06"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"sweater","quantity":1,"amount":6000,"time":"2019-05-21 15:14:36"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"apple","quantity":8,"amount":800,"time":"2019-04-13 14:30:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"banana","quantity":4,"amount":1200,"time":"2019-04-01 00:23:51"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"lemon","quantity":1,"amount":1000,"time":"2019-04-13 19:21:03"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"paper","quantity":3,"amount":2400,"time":"2019-04-09 06:37:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"paper","quantity":5,"amount":4000,"time":"2019-04-10 14:36:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"adam","item":"eraser","quantity":6,"amount":5400,"time":"2019-05-13 20:45:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"scissors","quantity":3,"amount":2100,"time":"2019-03-23 04:43:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"orange","quantity":7,"amount":1400,"time":"2019-05-21 11:07:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"eraser","quantity":6,"amount":5400,"time":"2019-03-21 01:19:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":3,"amount":9000,"time":"2019-05-03 14:06:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"eraser","quantity":9,"amount":8100,"time":"2019-05-11 12:04:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"thomas","item":"jacket","quantity":9,"amount":18000,"time":"2019-05-01 14:28:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"orange","quantity":4,"amount":800,"time":"2019-05-14 10:46:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"banana","quantity":1,"amount":300,"time":"2019-04-27 19:12:37"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"eraser","quantity":1,"amount":900,"time":"2019-05-18 11:16:29"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"dress","quantity":1,"amount":600,"time":"2019-04-10 23:44:39"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"eraser","quantity":9,"amount":8100,"time":"2019-03-16 10:24:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"banana","quantity":3,"amount":900,"time":"2019-05-04 21:08:01"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"scissors","quantity":3,"amount":2100,"time":"2019-04-03 03:25:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":5,"amount":15000,"time":"2019-04-13 00:15:50"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"jacket","quantity":7,"amount":14000,"time":"2019-05-14 19:34:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"banana","quantity":9,"amount":2700,"time":"2019-03-16 03:54:38"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"parker","item":"pen","quantity":8,"amount":24000,"time":"2019-05-07 06:05:31"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"note","quantity":4,"amount":28000,"time":"2019-05-03 04:54:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"lucas","item":"melon","quantity":2,"amount":10000,"time":"2019-03-22 15:46:02"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"note","quantity":1,"amount":7000,"time":"2019-05-03 09:52:56"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"david","item":"jacket","quantity":3,"amount":6000,"time":"2019-04-05 07:21:19"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"jackson","item":"scissors","quantity":9,"amount":6300,"time":"2019-04-22 22:32:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":9,"amount":27000,"time":"2019-04-27 16:09:15"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"jacket","quantity":7,"amount":14000,"time":"2019-03-23 16:27:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"scissors","quantity":1,"amount":700,"time":"2019-05-17 13:52:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"banana","quantity":5,"amount":1500,"time":"2019-05-09 17:57:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"jacket","quantity":4,"amount":8000,"time":"2019-04-23 23:54:49"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"shirts","quantity":1,"amount":400,"time":"2019-05-03 15:17:59"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"smith","item":"paper","quantity":4,"amount":3200,"time":"2019-04-24 04:30:57"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"dress","quantity":2,"amount":1200,"time":"2019-03-25 20:23:28"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"banana","quantity":8,"amount":2400,"time":"2019-05-10 13:13:10"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"pen","quantity":4,"amount":12000,"time":"2019-05-17 16:02:24"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"paper","quantity":7,"amount":5600,"time":"2019-04-22 17:07:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":4,"amount":1600,"time":"2019-04-21 13:00:26"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"apple","quantity":9,"amount":900,"time":"2019-03-20 04:00:46"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"john","item":"orange","quantity":6,"amount":1200,"time":"2019-03-31 22:02:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"pen","quantity":1,"amount":3000,"time":"2019-04-17 03:28:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"note","quantity":6,"amount":42000,"time":"2019-05-19 13:54:04"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"bob","item":"scissors","quantity":3,"amount":2100,"time":"2019-04-05 10:12:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"melon","quantity":5,"amount":25000,"time":"2019-04-03 12:53:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"pen","quantity":1,"amount":3000,"time":"2019-05-17 00:03:32"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"peter","item":"coat","quantity":5,"amount":2500,"time":"2019-04-28 23:52:13"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"sweater","quantity":9,"amount":54000,"time":"2019-03-28 21:57:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"thomas","item":"apple","quantity":8,"amount":800,"time":"2019-03-14 09:00:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"lemon","quantity":6,"amount":6000,"time":"2019-04-19 23:22:47"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"melon","quantity":9,"amount":45000,"time":"2019-04-23 03:48:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"thomas","item":"scissors","quantity":7,"amount":4900,"time":"2019-03-25 09:24:45"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"shirts","quantity":9,"amount":3600,"time":"2019-03-19 15:42:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"smith","item":"dress","quantity":5,"amount":3000,"time":"2019-03-26 06:28:46"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"sweater","quantity":4,"amount":24000,"time":"2019-05-15 12:57:14"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"parker","item":"shirts","quantity":2,"amount":800,"time":"2019-03-17 23:03:43"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"jackson","item":"sweater","quantity":8,"amount":48000,"time":"2019-03-21 20:21:42"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"david","item":"pen","quantity":1,"amount":3000,"time":"2019-04-10 20:40:48"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"bob","item":"dress","quantity":1,"amount":600,"time":"2019-03-21 18:46:33"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"peter","item":"orange","quantity":9,"amount":1800,"time":"2019-03-20 15:07:20"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"emily","item":"apple","quantity":7,"amount":700,"time":"2019-03-30 20:20:58"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"office","user":"john","item":"eraser","quantity":2,"amount":1800,"time":"2019-05-10 22:13:16"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"bob","item":"apple","quantity":2,"amount":200,"time":"2019-04-28 16:56:23"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"emily","item":"dress","quantity":4,"amount":2400,"time":"2019-04-13 20:10:35"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"food","user":"parker","item":"apple","quantity":8,"amount":800,"time":"2019-04-21 20:59:12"}
+{"index":{"_index":"records","_type":"_doc"}}
+{"class":"cloth","user":"lucas","item":"coat","quantity":4,"amount":2000,"time":"2019-03-25 11:24:08"}

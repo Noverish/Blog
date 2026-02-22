@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>AWS EC2로 나만의 Proxy 서버 만들기 - Hyunsub&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hyunsub Kim"><meta name="msapplication-TileImage" content="/assets/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hyunsub Kim"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta description="복잡한 서버 설정 없이 Proxy Server를 만드는 법을 알아봅시다."><meta property="og:type" content="blog"><meta property="og:title" content="AWS EC2로 나만의 Proxy 서버 만들기"><meta property="og:url" content="https://blog.hyunsub.kim/Server/EC2-Your-Own-VPN/"><meta property="og:site_name" content="Hyunsub&#039;s Blog"><meta property="og:description" content="복잡한 서버 설정 없이 Proxy Server를 만드는 법을 알아봅시다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://blog.hyunsub.kim/covers/aws-ec2-vpn.jpg"><meta property="article:published_time" content="2018-04-13T02:48:00.000Z"><meta property="article:author" content="Hyunsub Kim"><meta property="article:tag" content="ec2"><meta property="article:tag" content="proxy"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/covers/aws-ec2-vpn.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.hyunsub.kim/Server/EC2-Your-Own-VPN/"},"headline":"Hyunsub's Blog","image":["https://blog.hyunsub.kim/covers/aws-ec2-vpn.jpg"],"datePublished":"2018-04-13T02:48:00.000Z","author":{"@type":"Person","name":"Hyunsub Kim"},"description":"복잡한 서버 설정 없이 Proxy Server를 만드는 법을 알아봅시다."}</script><link rel="canonical" href="https://blog.hyunsub.kim/Server/EC2-Your-Own-VPN/"><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Noverish/Blog"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="카탈로그" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/covers/aws-ec2-vpn.jpg" alt="AWS EC2로 나만의 Proxy 서버 만들기"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2018-04-13T02:48:00.000Z" title="2018-04-13T02:48:00.000Z">2018-04-13</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/Server/">Server</a></span><span class="level-item">7분안에 읽기 (약 982 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile">AWS EC2로 나만의 Proxy 서버 만들기</h1><div class="content"><p>복잡한 서버 설정 없이 Proxy Server를 만드는 법을 알아봅시다.</p>
+<span id="more"></span>
+
+<hr>
+<p>우리는 세상 살면서 여러가지 이유로 해외 IP로 접속해야 하는 사이트가 존재합니다.
+그게 무슨 사이트인지는 굳이 언급하지 않도록 하겠습니다 ㅎㅎ.
+시중에 있는 무료 Proxy는 너무 속도가 느리고 그렇다고 유료 Proxy을 쓰자니 돈이 좀 아까운 느낍이 듭니다.
+그래서 EC2로 Proxy Server를 만드는 법을 알려드리도록 하겠습니다.</p>
+<h1 id="1-해외-Region에서-EC2-만들기"><a href="#1-해외-Region에서-EC2-만들기" class="headerlink" title="1. 해외 Region에서 EC2 만들기"></a>1. 해외 Region에서 EC2 만들기</h1><p>이건 쉬우므로 건너 뛰도록 하겠습니다.</p>
+<h1 id="2-Mac에서-VPN-사용하기"><a href="#2-Mac에서-VPN-사용하기" class="headerlink" title="2. Mac에서 VPN 사용하기"></a>2. Mac에서 VPN 사용하기</h1><p>먼저 터미널을 켜주신 후 pem 파일이 있는 폴더로 가서 아래 명령어를 입력합니다.
+아래 <code>1.2.3.4</code>를 본인 EC2의 IP로 바꿔주시길 바랍니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ssh -i key_pair.pem -D 8080 -C -N user@1.2.3.4</span></span><br></pre></td></tr></table></figure>
+
+<p>위 명령어를 입력한 후 뭔가 실행된 상태로 되어 있으면 정상적으로 proxy tunnel을 생성한겁니다.
+앞으로 접속하는 모든 사이트의 패킷들은 이 tunnel을 통과합니다.</p>
+<h2 id="2-1-환경설정에서-Proxy-기능-켜고-끄기"><a href="#2-1-환경설정에서-Proxy-기능-켜고-끄기" class="headerlink" title="2.1. 환경설정에서 Proxy 기능 켜고 끄기"></a>2.1. 환경설정에서 Proxy 기능 켜고 끄기</h2><p>네트워크 환경설정에 들어갑니다.</p>
+<img src="000.jpg" width="600">
+
+<p><code>고급</code> 버튼을 누릅니다.</p>
+<img src="001.jpg" width="600">
+
+<p>위 그림처럼 따라하시면 됩니다.</p>
+<img src="002.jpg" width="600">
+
+<p><code>적용</code> 버튼을 누르면 Proxy 기능이 켜집니다.</p>
+<p>Proxy를 끌 때는 저 설정에 들어가서 <code>SOCKS 프록시</code>를 체크해제 하시고 적용하시면 됩니다.</p>
+<h2 id="2-2-Command로-Proxy-기능-켜고-끄기"><a href="#2-2-Command로-Proxy-기능-켜고-끄기" class="headerlink" title="2.2. Command로 Proxy 기능 켜고 끄기"></a>2.2. Command로 Proxy 기능 켜고 끄기</h2><p>근데 이렇게 일일이 환경설정 들어가서 Proxy를 키거나 끄면 너무 귀찮으니까 터미널에서 명령어로 처리하는 법을 알아봅시다.</p>
+<p>먼저 본인이 지금 사용하고 있는 네트워크 인터페이스 이름을 알아내야 합니다.
+그러기 위해서 아래 명령어를 입력해 그 리스트를 알아냅니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> networksetup -listnetworkserviceorder</span></span><br></pre></td></tr></table></figure>
+
+<img src="003.jpg" width="600">
+
+<p>저는 위와 같은 결과가 나왔습니다.
+저는 제 맥북을 와이파이로 쓰고 있으므로 저 <code>Wi-Fi</code>가 제 와이파이 네트워크 인터페이스 이름입니다.
+기타 다른 네트워크 어댑터를 쓰고 있다면 그에 맞는 인터페이스 이름을 찾으시면 됩니다.</p>
+<p>이제 이 이름을 바탕으로 아래 명령어를 실행하시면 됩니다.</p>
+<p>VPN 켤 때</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> networksetup -setsocksfirewallproxy <span class="string">&quot;Wi-Fi&quot;</span> localhost 8080</span></span><br></pre></td></tr></table></figure>
+
+<p>VPN 끌 때</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> networksetup -setsocksfirewallproxystate <span class="string">&quot;Wi-Fi&quot;</span> off</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="4-Windows에서-VPN-사용하기"><a href="#4-Windows에서-VPN-사용하기" class="headerlink" title="4. Windows에서 VPN 사용하기"></a>4. Windows에서 VPN 사용하기</h1><p>제가 아는 선에서는 Mac과 달리 Windows에서 모든 패킷을 Proxy로 우회하는 방법이 없습니다.
+만약 그런 방법이 있다면 제보해 주시길 바랍니다.</p>
+<p>먼저 putty와 같이 ssh tunnel을 유지시키는 <code>MyEnTunnel</code>을 인터넷에서 다운받습니다.</p>
+<img src="004.jpg" width="600">
+
+<p>위와 같이 아이피 주소, 유저 네임, 비밀번호를 입력하고, <code>Enable Dynamic SOCKS</code>를 체크하시고 저 포트를 8080로 바꿔줍니다.</p>
+<img src="005.jpg" width="300">
+
+<p>그리고 <code>Connect</code> 버튼을 누르면 위와 같은 메시지가 뜰텐데 그냥 Yes 누르시면 됩니다.</p>
+<img src="006.jpg" width="600">
+
+<p>status 탭에 이렇게 로그가 뜰텐데 Connectino stable이라고 뜨면 성공적으로 ssh tunnel을 만든겁니다.</p>
+<p>그리고 프로그램들을 가상 네트워크 인터페이스 상에 실행시켜줄 <code>SocksCap64</code>를 인터넷에서 다운받습니다.</p>
+<img src="007.jpg" width="600">
+
+<p>여기서 <code>예</code>를 누르면 자동으로 웹 브로우저 목록을 불러옵니다.</p>
+<img src="008.jpg" width="600">
+
+<p>뭐라는지 잘 모르겠지만 Accept를 눌러줍시다.</p>
+<img src="009.jpg" width="600">
+
+<p>이와 같은 화면에서 좌상단의 Proxy 버튼을 누릅니다.</p>
+<img src="010.jpg" width="600">
+
+<p>여기서 127.0.0.1과 8080을 입력한 다음에 저장하고 이 프로그램상에서 웹브라우저를 실행시키시면 됩니다.</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>AWS EC2로 나만의 Proxy 서버 만들기</p><p><a href="https://blog.hyunsub.kim/Server/EC2-Your-Own-VPN/">https://blog.hyunsub.kim/Server/EC2-Your-Own-VPN/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Hyunsub Kim</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2018-04-13</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/ec2/">ec2</a><a class="link-muted mr-2" rel="tag" href="/tags/proxy/">proxy</a></div><div class="sharethis-inline-share-buttons"></div><script src="//platform-api.sharethis.com/js/sharethis.js#property=5fd61d47957af60014171af8&amp;product=inline-share-buttons" defer></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/iOS/Auto-Layout/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">iOS 오토 레이아웃 파헤치기</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/etc/Chrome-Custom-Search-Engine/"><span class="level-item">크롬에서 나만의 검색 엔진 사용하기</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://blog.hyunsub.kim/Server/EC2-Your-Own-VPN/';
+            this.page.identifier = '0a13fce5b68f99e8e556d24fbd04a71f14923011';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'blog-hyunsub' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/assets/profile.jpg" alt="Hyunsub Kim"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Hyunsub Kim</p><p class="is-size-6 is-block">(noverish)</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Seoul, Korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">50</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">64</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/noverish" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Résumé" href="https://hyunsub.kim"><i class="fas fa-home"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/noverish"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com/profile.php?id=100008644627377"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/noverish"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="LinkedIn" href="https://www.linkedin.com/in/hyunsub-kim-912a981b2/"><i class="fab fa-linkedin"></i></a></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/AWS/"><span class="level-start"><span class="level-item">AWS</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Android/"><span class="level-start"><span class="level-item">Android</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CI-CD/"><span class="level-start"><span class="level-item">CI/CD</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Docker/"><span class="level-start"><span class="level-item">Docker</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Hadoop/"><span class="level-start"><span class="level-item">Hadoop</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Node/"><span class="level-start"><span class="level-item">Node</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Server/"><span class="level-start"><span class="level-item">Server</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/Spring/"><span class="level-start"><span class="level-item">Spring</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/iOS/"><span class="level-start"><span class="level-item">iOS</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/categories/%EA%B8%B0%ED%83%80/"><span class="level-start"><span class="level-item">기타</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">카탈로그</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-해외-Region에서-EC2-만들기"><span class="level-left"><span class="level-item">1. 해외 Region에서 EC2 만들기</span></span></a></li><li><a class="level is-mobile" href="#2-Mac에서-VPN-사용하기"><span class="level-left"><span class="level-item">2. Mac에서 VPN 사용하기</span></span></a></li><li><a class="level is-mobile" href="#4-Windows에서-VPN-사용하기"><span class="level-left"><span class="level-item">4. Windows에서 VPN 사용하기</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2026 Hyunsub Kim</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script><!-- hexo injector body_end start -->
+  <script>
+  (() => {
+    function switchTab() {
+      const defaultTab = document.querySelector('.tabs li a').getAttribute('href').slice(1);
+      const activeTab = (location.hash) ? location.hash.slice(1) : defaultTab;
+
+      document.querySelectorAll('.tab-content').forEach(v => v.classList.add('is-hidden'));
+      document.querySelectorAll('.tabs li').forEach(v => v.classList.remove('is-active'));
+
+      document.querySelectorAll('.' + activeTab).forEach(v => v.classList.remove('is-hidden'));
+      document.querySelectorAll(`a[href="#${activeTab}"]`).forEach(v => v.parentElement.classList.add('is-active'));
+    }
+    switchTab();
+    window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script>
+  <!-- hexo injector body_end end --></body></html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Terminal 꾸미기 - Hyunsub&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Hyunsub Kim"><meta name="msapplication-TileImage" content="/assets/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hyunsub Kim"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta description="검정 바탕에 흰 글자가 전부인 기본 Terminal은 눈을 침침하게 하고 코딩 의욕을 저하시키는 원인 중에 하나입니다. 다양한 테마와 폰트, 색상 프로필을 통해 터미널을 멋있게 꾸미는 법을 알아보겠습니다."><meta property="og:type" content="blog"><meta property="og:title" content="Terminal 꾸미기"><meta property="og:url" content="https://blog.hyunsub.kim/Server/Customize-Terminal/"><meta property="og:site_name" content="Hyunsub&#039;s Blog"><meta property="og:description" content="검정 바탕에 흰 글자가 전부인 기본 Terminal은 눈을 침침하게 하고 코딩 의욕을 저하시키는 원인 중에 하나입니다. 다양한 테마와 폰트, 색상 프로필을 통해 터미널을 멋있게 꾸미는 법을 알아보겠습니다."><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://blog.hyunsub.kim/covers/bash.jpg"><meta property="article:published_time" content="2021-02-28T17:12:00.000Z"><meta property="article:author" content="Hyunsub Kim"><meta property="article:tag" content="zsh"><meta property="article:tag" content="terminal"><meta property="article:tag" content="ohmyzsh"><meta property="article:tag" content="ghostty"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/covers/bash.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.hyunsub.kim/Server/Customize-Terminal/"},"headline":"Hyunsub's Blog","image":["https://blog.hyunsub.kim/covers/bash.jpg"],"datePublished":"2021-02-28T17:12:00.000Z","author":{"@type":"Person","name":"Hyunsub Kim"},"description":"검정 바탕에 흰 글자가 전부인 기본 Terminal은 눈을 침침하게 하고 코딩 의욕을 저하시키는 원인 중에 하나입니다. 다양한 테마와 폰트, 색상 프로필을 통해 터미널을 멋있게 꾸미는 법을 알아보겠습니다."}</script><link rel="canonical" href="https://blog.hyunsub.kim/Server/Customize-Terminal/"><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/Noverish/Blog"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="카탈로그" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/covers/bash.jpg" alt="Terminal 꾸미기"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-02-28T17:12:00.000Z" title="2021-02-28T17:12:00.000Z">2021-03-01</time>&nbsp;게시 됨</span><span class="level-item"><a class="link-muted" href="/categories/Server/">Server</a></span><span class="level-item">16분안에 읽기 (약 2333 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile">Terminal 꾸미기</h1><div class="content"><p>검정 바탕에 흰 글자가 전부인 기본 Terminal은 눈을 침침하게 하고 코딩 의욕을 저하시키는 원인 중에 하나입니다.
+다양한 테마와 폰트, 색상 프로필을 통해 터미널을 멋있게 꾸미는 법을 알아보겠습니다.</p>
+<span id="more"></span>
+
+<p><img src="/Server/Customize-Terminal/zsh.png" alt="맥 기본 터미널"></p>
+<p>맥 기본 Terminal의 모습입니다. 검정 바탕에 흰 글자… 정말 재미도 없고 감동도 없는 그런 모습입니다.
+이제 이 글을 따라하며 한 단계씩 설정해 나가면 다음과 같은 터미널을 만들 수 있습니다.</p>
+<p><img src="/Server/Customize-Terminal/powerlevel10k.png" alt="이 글을 따라한 후 당신의 터미널"></p>
+<h1 id="1-zsh-설치"><a href="#1-zsh-설치" class="headerlink" title="1. zsh 설치"></a>1. zsh 설치</h1><p>맥은 Catalina부터 기본 터미널이 zsh로 설정되어 있습니다. 따라서 대부분의 경우 이 단계는 건너뛰어도 됩니다.
+터미널에서 <code>echo $0</code>를 입력한 결과값에 <code>zsh</code>가 포함되어 있지 않다면 아래의 명령어로 zsh를 설치하고, 기본 터미널을 zsh로 바꿔줍니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install zsh     <span class="comment"># zsh 설치</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> chsh -s $(<span class="built_in">which</span> zsh) <span class="comment"># 기본 터미널을 zsh로 변경</span></span></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-Oh-My-ZSH-설치"><a href="#2-Oh-My-ZSH-설치" class="headerlink" title="2. Oh My ZSH 설치"></a>2. Oh My ZSH 설치</h1><p>먼저 다양한 테마와 다양한 플러그인을 설치할 수 있는 <a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh">Oh My ZSH</a>를 설치합니다.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)</span>&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>위의 명령어를 통해 Oh My ZSH를 설치하면 아래와 같이 터미널이 조금 달라져 있는 것을 볼 수 있습니다.</p>
+<p><img src="/Server/Customize-Terminal/ohmyzsh.png" alt="Oh MY ZSH 설치후 터미널"></p>
+<h1 id="3-Oh-My-ZSH-테마-변경"><a href="#3-Oh-My-ZSH-테마-변경" class="headerlink" title="3. Oh My ZSH 테마 변경"></a>3. Oh My ZSH 테마 변경</h1><p>Oh My ZSH는 설정 파일에서 단순히 글자만 바꿈으로써 테마를 변경할 수 있습니다.
+일단 여기서는 <code>agnoster</code> 테마를 적용하겠습니다.
+더 많은 테마는 <a target="_blank" rel="noopener" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">여기</a>에서 확인해주세요.</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">- ZSH_THEME=&quot;robbyrussell&quot;</span></span><br><span class="line"><span class="addition">+ ZSH_THEME=&quot;agnoster&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>~/.zshrc</code> 파일을 위와 같이 변경한 후 새 터미널을 열면 아래 사진과 같이 바뀐 테마가 적용 되어 있습니다.
+명령어 입력란을 보면 좀 달라져 있는 것을 알 수 있습니다.</p>
+<p><img src="/Server/Customize-Terminal/agnoster-bad.png" alt="폰트 문제 때문에 agnoster 테마가 잘 적용되지 않은 터미널"></p>
+<p>하지만 폰트 문제 때문에 위와 같이 뭔가 이상하게 나오는 것을 알 수 있습니다.</p>
+<h1 id="4-폰트-적용"><a href="#4-폰트-적용" class="headerlink" title="4. 폰트 적용"></a>4. 폰트 적용</h1><p><a target="_blank" rel="noopener" href="https://github.com/powerline/fonts">https://github.com/powerline/fonts</a>
+에 가서 맘에드는 폰트를 설치하길 바랍니다.</p>
+<p>저는 <a target="_blank" rel="noopener" href="https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf">Source Code Pro for Powerline</a>을 사용했습니다.</p>
+<p>그런 다음 터미널에서 아래와 같이 폰트를 바꾼 후 새 터미널을 열면 제대로 나오는 것을 볼 수 있습니다.</p>
+<p><img src="/Server/Customize-Terminal/terminal-font.jpg" alt="터미널에서 폰트를 바꾸는 방법"></p>
+<p><img src="/Server/Customize-Terminal/agnoster-good.png" alt="agnoster 테마가 적용된 터미널"></p>
+<h1 id="5-색상-프로필-변경"><a href="#5-색상-프로필-변경" class="headerlink" title="5. 색상 프로필 변경"></a>5. 색상 프로필 변경</h1><p>여기까지만 해도 충분히 괜찮지만 검정 바탕에 흰 글자는 여전히 너무 식상합니다.
+이제 색상 프로필을 변경함으로써 좀 더 그럴듯하게 만들어줄 것입니다.</p>
+<p>먼저 <a target="_blank" rel="noopener" href="https://github.com/lysyi3m/macos-terminal-themes">여기</a>서 원하는 프로필을 선택한 후 다운로드 해줍니다.
+저는 <a target="_blank" rel="noopener" href="https://github.com/lysyi3m/macos-terminal-themes/blob/master/themes/Solarized%20Dark.terminal">Solarized Dark</a> 프로필을 사용했습니다.</p>
+<p>그런 다음 터미널에서 아래와 같이 프로필을 Import한 후 새 터미널을 열면 그럴듯한 색이 나오는 것을 볼 수 있습니다.</p>
+<p><img src="/Server/Customize-Terminal/terminal-scheme.jpg" alt="터미널에서 색상 프로필을 Import 하는 방법"></p>
+<p><img src="/Server/Customize-Terminal/solarized.png" alt="Solarized Dark가 젹용된 터미널"></p>
+<h1 id="6-powerlevel10k-테마"><a href="#6-powerlevel10k-테마" class="headerlink" title="6. powerlevel10k 테마"></a>6. powerlevel10k 테마</h1><p>여기까지만 해도 충분이 괜찮지만 <a target="_blank" rel="noopener" href="https://github.com/romkatv/powerlevel10k">powerlevel10k</a> 테마를 통해 명령어 입력란을 좀 더 풍성하게 만들어 줄 수 있습니다.</p>
+<ol>
+<li><code>powerlevel10k</code> 테마는 <code>Oh My ZSH</code> 에서 기본으로 지원해 주지 않기 때문에 따로 아래의 명령어를 통해 <code>powerlevel10k</code> 테마를 다운로드 해줍니다.</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> --depth=1 https://github.com/romkatv/powerlevel10k.git <span class="variable">$&#123;ZSH_CUSTOM:-<span class="variable">$HOME</span>/.oh-my-zsh/custom&#125;</span>/themes/powerlevel10k</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p><code>Source Code Pro for Powerline</code>에 <code>Awesome Font</code>가 추가된 폰트를 <a target="_blank" rel="noopener" href="https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf">여기</a>에서 다운로드한 후 설치합니다. 굳이 이 폰트가 아니더라도 Powerline과 Awesome Font가 추가된 폰트면 다 괜찮습니다.</p>
+</li>
+<li><p>터미널 설정에 들어가 폰트를 <code>SourceCodePro+Powerline+Awesome Regular</code>로 바꿔줍니다.</p>
+</li>
+<li><p>다음과 같이 <code>~/.zshrc</code> 파일을 변경한 후 새 터미널을 열면 아래 사진과 같이 interactive하게 설정을 할 수 있습니다.</p>
+</li>
+</ol>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">- ZSH_THEME=&quot;agnoster&quot;</span></span><br><span class="line"><span class="addition">+ ZSH_THEME=&quot;powerlevel10k/powerlevel10k&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/Server/Customize-Terminal/interactive.png" alt="powerlevel10k 설정 화면"></p>
+<ol start="5">
+<li>설정을 다 마치고 나면 다음과 같이 멋있고 풍성한 터미널을 볼 수 있습니다.</li>
+</ol>
+<p><img src="/Server/Customize-Terminal/powerlevel10k.png" alt="powerlevel10k 테마가 적용된 터미널"></p>
+<p>위의 사진처럼 <code>powerlevel10k</code> 테마에서는 명령어를 입력한 시간, 명령어가 걸린 시간, 명령어의 exit 값을 알 수 있습니다.</p>
+<h1 id="7-Ghostty-터미널"><a href="#7-Ghostty-터미널" class="headerlink" title="7. Ghostty 터미널"></a>7. Ghostty 터미널</h1><p><a target="_blank" rel="noopener" href="https://ghostty.org/">Ghostty</a>는 2024년 말 공개된 터미널 에뮬레이터로, GPU 가속 렌더링과 네이티브 UI를 결합하여 빠른 속도와 높은 완성도를 자랑합니다.
+macOS와 Linux를 모두 지원하며, 설정 파일 하나로 간결하게 관리할 수 있습니다.</p>
+<p>설정 파일 위치는 <code>~/.config/ghostty/config</code>입니다.</p>
+<h2 id="테마-및-폰트"><a href="#테마-및-폰트" class="headerlink" title="테마 및 폰트"></a>테마 및 폰트</h2><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme</span> = Solarized Dark Higher Contrast</span><br><span class="line"><span class="attr">font-family</span> = <span class="string">&quot;SourceCodePro+Powerline+Awesome Regular&quot;</span></span><br><span class="line"><span class="attr">font-family</span> = <span class="string">&quot;Apple SD Gothic Neo&quot;</span></span><br><span class="line"><span class="attr">font-style-bold</span> = <span class="literal">false</span></span><br><span class="line"><span class="attr">font-style-bold-italic</span> = <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><code>theme</code>: 기본 제공 테마 이름을 입력합니다. <code>Solarized Dark Higher Contrast</code>는 Solarized Dark보다 대비가 높아 가독성이 좋습니다.</p>
+</li>
+<li><p><code>font-family</code>: 우선순위 순서로 여러 개 지정할 수 있습니다. 첫 번째 폰트에 없는 글자(한글 등)는 두 번째 폰트로 자동 대체됩니다.</p>
+</li>
+<li><p><code>font-style-bold</code> &#x2F; <code>font-style-bold-italic</code>: <code>false</code>로 설정하면 볼드·이탤릭 서체를 별도로 렌더링하지 않고 일반 서체로 통일합니다.</p>
+<p>이 옵션을 설정하지 않으면 <code>ls</code> 명령어 결과가 이상하게 출력됩니다.
+<code>ls</code>는 기본적으로 디렉토리 이름을 볼드체로 출력하는데, <code>SourceCodePro+Powerline+Awesome Regular</code>는 <strong>Regular 웨이트만 존재하는 패치 폰트</strong>입니다.
+볼드 렌더링이 요청되면 Ghostty가 해당 폰트의 Bold 변형을 찾지 못해, Powerline·Awesome 글리프가 포함되지 않은 <strong>시스템의 다른 Source Code Pro Bold 폰트</strong>로 대체됩니다.
+그 결과 프롬프트의 특수 기호들이 깨지거나, 폰트 메트릭 차이로 인해 글자 간격이 틀어져 보입니다.
+<code>font-style-bold = false</code>를 설정하면 볼드 요청이 와도 항상 Regular 폰트를 사용하므로 이 문제가 사라집니다.</p>
+</li>
+</ul>
+<h2 id="커서"><a href="#커서" class="headerlink" title="커서"></a>커서</h2><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cursor-style</span> = block</span><br><span class="line">cursor-color = #708284</span><br><span class="line"><span class="attr">shell-integration-features</span> = <span class="literal">no</span>-cursor</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><code>cursor-style</code>: 커서 모양을 지정합니다. <code>block</code>, <code>bar</code>, <code>underline</code>, <code>block_hollow</code> 중 선택할 수 있습니다. 기본값은 <code>block</code>입니다. <code>Solarized Dark Higher Contrast</code> 테마는 <code>cursor-style</code>을 별도로 정의하지 않으므로 Ghostty 기본값인 <code>block</code>이 그대로 적용됩니다.</p>
+</li>
+<li><p><code>cursor-color</code>: 커서 색상을 hex 코드로 지정합니다. <code>Solarized Dark Higher Contrast</code> 테마의 기본 커서 색상은 <code>#f34b00</code>(주황빛 빨강)인데, 눈에 너무 튀어서 회색 계열인 <code>#708284</code>로 변경했습니다.</p>
+</li>
+<li><p><code>shell-integration-features = no-cursor</code>: Ghostty의 쉘 통합 기능 중 커서 제어만 비활성화합니다. zsh&#x2F;powerlevel10k가 커서를 직접 관리하도록 맡깁니다.</p>
+<p>이 옵션을 설정하지 않으면 <code>cursor-style</code>과 <code>cursor-color</code> 설정이 적용되지 않습니다.
+Ghostty는 쉘 통합(shell integration) 기능을 활성화하면 zsh에 훅(hook)을 자동으로 주입하여, 명령어 실행 중·대기 중 등 <strong>쉘의 상태에 따라 동적으로 커서를 변경하는 ANSI 이스케이프 시퀀스</strong>를 프롬프트에 삽입합니다.
+이 동적 시퀀스가 config 파일의 정적 커서 설정을 덮어쓰기 때문에, 아무리 <code>cursor-style</code>과 <code>cursor-color</code>를 지정해도 반영되지 않는 것입니다.
+<code>no-cursor</code>를 설정하면 Ghostty가 커서 관련 이스케이프 시퀀스 주입을 생략하므로, config 파일에 지정한 커서 스타일과 색상이 그대로 유지됩니다.</p>
+</li>
+</ul>
+<h2 id="배경-투명도"><a href="#배경-투명도" class="headerlink" title="배경 투명도"></a>배경 투명도</h2><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">background-opacity</span> = <span class="number">0.85</span></span><br><span class="line"><span class="attr">background-blur-radius</span> = <span class="number">20</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>background-opacity</code>: 배경 투명도를 0~1 사이로 설정합니다. <code>0.85</code>는 살짝 투명하게 보이는 정도입니다.</li>
+<li><code>background-blur-radius</code>: 투명 배경 뒤의 내용을 흐리게 처리하는 블러 반경입니다. macOS의 유리(glass) 효과와 함께 사용하면 깔끔합니다.</li>
+</ul>
+<h2 id="키-바인딩"><a href="#키-바인딩" class="headerlink" title="키 바인딩"></a>키 바인딩</h2><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">keybind</span> = global:cmd+grave_accent=toggle_quick_terminal</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>global:</code> 접두사를 붙이면 다른 앱이 포커스를 갖고 있어도 동작하는 전역 단축키로 등록됩니다.</li>
+<li><code>cmd+grave_accent</code>는 <code>Cmd+`</code>에 해당합니다.</li>
+<li><code>toggle_quick_terminal</code>은 화면 상단에서 슬라이드로 내려오는 Quick Terminal을 토글합니다. 어느 앱에서든 빠르게 터미널을 열 수 있어 매우 편리합니다.</li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Terminal 꾸미기</p><p><a href="https://blog.hyunsub.kim/Server/Customize-Terminal/">https://blog.hyunsub.kim/Server/Customize-Terminal/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Hyunsub Kim</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-03-01</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/zsh/">zsh</a><a class="link-muted mr-2" rel="tag" href="/tags/terminal/">terminal</a><a class="link-muted mr-2" rel="tag" href="/tags/ohmyzsh/">ohmyzsh</a><a class="link-muted mr-2" rel="tag" href="/tags/ghostty/">ghostty</a></div><div class="sharethis-inline-share-buttons"></div><script src="//platform-api.sharethis.com/js/sharethis.js#property=5fd61d47957af60014171af8&amp;product=inline-share-buttons" defer></script></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/Spring/Spring-MyBatis/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Spring Boot - MyBatis (with MySQL)</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/Spring/Spring-JWT/"><span class="level-item">Spring Boot - JWT</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://blog.hyunsub.kim/Server/Customize-Terminal/';
+            this.page.identifier = '0011860c22129d38a8838a22fd2921333ee038a5';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'blog-hyunsub' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/assets/profile.jpg" alt="Hyunsub Kim"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Hyunsub Kim</p><p class="is-size-6 is-block">(noverish)</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Seoul, Korea</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">50</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">64</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/noverish" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Résumé" href="https://hyunsub.kim"><i class="fas fa-home"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/noverish"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com/profile.php?id=100008644627377"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com/noverish"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="LinkedIn" href="https://www.linkedin.com/in/hyunsub-kim-912a981b2/"><i class="fab fa-linkedin"></i></a></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/AWS/"><span class="level-start"><span class="level-item">AWS</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Android/"><span class="level-start"><span class="level-item">Android</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/CI-CD/"><span class="level-start"><span class="level-item">CI/CD</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Docker/"><span class="level-start"><span class="level-item">Docker</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Hadoop/"><span class="level-start"><span class="level-item">Hadoop</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Node/"><span class="level-start"><span class="level-item">Node</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Server/"><span class="level-start"><span class="level-item">Server</span></span><span class="level-end"><span class="level-item tag">13</span></span></a></li><li><a class="level is-mobile" href="/categories/Spring/"><span class="level-start"><span class="level-item">Spring</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/categories/iOS/"><span class="level-start"><span class="level-item">iOS</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li><li><a class="level is-mobile" href="/categories/%EA%B8%B0%ED%83%80/"><span class="level-start"><span class="level-item">기타</span></span><span class="level-end"><span class="level-item tag">6</span></span></a></li></ul></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">카탈로그</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-zsh-설치"><span class="level-left"><span class="level-item">1. zsh 설치</span></span></a></li><li><a class="level is-mobile" href="#2-Oh-My-ZSH-설치"><span class="level-left"><span class="level-item">2. Oh My ZSH 설치</span></span></a></li><li><a class="level is-mobile" href="#3-Oh-My-ZSH-테마-변경"><span class="level-left"><span class="level-item">3. Oh My ZSH 테마 변경</span></span></a></li><li><a class="level is-mobile" href="#4-폰트-적용"><span class="level-left"><span class="level-item">4. 폰트 적용</span></span></a></li><li><a class="level is-mobile" href="#5-색상-프로필-변경"><span class="level-left"><span class="level-item">5. 색상 프로필 변경</span></span></a></li><li><a class="level is-mobile" href="#6-powerlevel10k-테마"><span class="level-left"><span class="level-item">6. powerlevel10k 테마</span></span></a></li><li><a class="level is-mobile" href="#7-Ghostty-터미널"><span class="level-left"><span class="level-item">7. Ghostty 터미널</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/assets/logo.svg" alt="Hyunsub&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2026 Hyunsub Kim</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script><!-- hexo injector body_end start -->
+  <script>
+  (() => {
+    function switchTab() {
+      const defaultTab = document.querySelector('.tabs li a').getAttribute('href').slice(1);
+      const activeTab = (location.hash) ? location.hash.slice(1) : defaultTab;
+
+      document.querySelectorAll('.tab-content').forEach(v => v.classList.add('is-hidden'));
+      document.querySelectorAll('.tabs li').forEach(v => v.classList.remove('is-active'));
+
+      document.querySelectorAll('.' + activeTab).forEach(v => v.classList.remove('is-hidden'));
+      document.querySelectorAll(`a[href="#${activeTab}"]`).forEach(v => v.parentElement.classList.add('is-active'));
+    }
+    switchTab();
+    window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script>
+  <!-- hexo injector body_end end --></body></html>
