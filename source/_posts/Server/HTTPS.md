@@ -24,12 +24,8 @@ Certbot은 Let's Encrypt의 인증서 발급을 편하게 도와주는 도구 �
 Certbot을 설치하기 위해서는 다음과 같은 명령어를 입력해 주시길 바랍니다.
 
 ```shell
-$ sudo apt-get update
-$ sudo apt-get install software-properties-common
-$ sudo add-apt-repository universe
-$ sudo add-apt-repository ppa:certbot/certbot
-$ sudo apt-get update
-$ sudo apt-get install certbot
+$ sudo apt update
+$ sudo apt install certbot
 ```
 
 # 2. 인증서 발급
