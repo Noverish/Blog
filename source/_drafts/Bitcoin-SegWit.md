@@ -1,0 +1,23 @@
+---
+layout: post
+title: 개발자를 위한 비트코인 해부학 (3) - SegWit 편
+date: 2022-01-09 19:58:00 +0900
+cover: /covers/bitcoin.png
+disqusId: b99aacba3ebf84e080e51d3ea1fb82cf64df1992
+toc: true
+category: Blockchain
+tags:
+- bitcoin
+- blockchain
+---
+
+개발자의 시각에서 정확한 비트코인의 동작 방식을 알아보겠습니다.
+
+<!-- more -->
+
+# SegWit
+
+https://river.com/learn/terms/b/block-weight/    
+https://river.com/learn/terms/w/weight-unit/    
+https://river.com/learn/terms/s/segwit/    
+https://river.com/learn/what-is-segwit/    
